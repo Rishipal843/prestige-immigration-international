@@ -1,0 +1,667 @@
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Migration International Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/service.css" />
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <!-- Left: Logo -->
+      <a href="#" class="logo">
+        <img src="./assets/logo/prestige-removebg-preview.png" alt="Prestige Migration International" />
+      </a>
+
+      <!-- Center / Mobile Drawer: Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="./home.html" class="nav-link" onclick="closeMobileMenu()">Home</a>
+
+        <div class="dropdown">
+          <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Services ▾</button>
+          <div class="dropdown-menu">
+            <a href="#study" onclick="closeMobileMenu()">Study Abroad</a>
+            <a href="#work" onclick="closeMobileMenu()">Work Permits</a>
+            <a href="#tourist" onclick="closeMobileMenu()">Tourist Visa</a>
+            <a href="#visit" onclick="closeMobileMenu()">Visitor Visas</a>
+            <a href="#business" onclick="closeMobileMenu()">Business Immigration</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Countries ▾</button>
+          <div class="dropdown-menu">
+            <a href="#canada" onclick="closeMobileMenu()">Canada</a>
+            <a href="#uk" onclick="closeMobileMenu()">United Kingdom</a>
+            <a href="#usa" onclick="closeMobileMenu()">United States</a>
+            <a href="#australia" onclick="closeMobileMenu()">Australia</a>
+            <a href="#nz" onclick="closeMobileMenu()">New Zealand</a>
+            <a href="#europe" onclick="closeMobileMenu()">Europe</a>
+          </div>
+        </div>
+
+        <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+        <a href="./contact.html" class="btn btn-primary mobile-cta" onclick="closeMobileMenu()">Apply Now</a>
+      </nav>
+
+      <!-- Right: Apply Button (Desktop Only) + Hamburger Toggle (Mobile Only) -->
+      <div class="nav-right">
+        <a href="#apply" class="btn btn-primary desktop-cta">Apply Now</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+<!-- SERVICES HERO SECTION -->
+<section class="services-hero-section">
+  <div class="container">
+    <div class="services-hero-grid">
+      
+      <!-- Left Content Column -->
+      <div class="services-hero-content">
+        <span class="services-eyebrow">OUR IMMIGRATION SERVICES</span>
+        <h1 class="services-title">
+          Comprehensive Immigration Solutions for Your Global Journey
+        </h1>
+        <p class="services-desc">
+          Whether you're planning to visit your loved ones, explore international destinations, expand your business, pursue employment opportunities or study abroad, Prestige Migration International is here to support your journey.
+        </p>
+        <p class="services-subdesc">
+          We provide professional immigration guidance and application assistance to help you understand visa requirements and navigate the process with confidence.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="services-hero-btns">
+          <a href="#services" class="services-btn-primary">Explore Our Services</a>
+          <a href="#consultation" class="services-btn-outline">Book Free Consultation</a>
+        </div>
+      </div>
+
+      <!-- Right Image Column (Curved Frame) -->
+      <div class="services-hero-media">
+        <div class="services-img-frame">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80" alt="Professional immigration guidance consultation">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- SERVICES OVERVIEW SECTION -->
+<section class="services-overview-section" id="services">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="services-overview-header">
+      <span class="services-overview-eyebrow">WHAT WE OFFER</span>
+      <h2 class="services-overview-title">Explore Our Immigration Services</h2>
+      <p class="services-overview-desc">
+        Every immigration journey is unique. We offer guidance across different visa categories, helping individuals and families understand their options and prepare for their international journey.
+      </p>
+    </div>
+
+    <!-- 5-Card Services Grid -->
+    <div class="services-cards-grid">
+      
+      <!-- 01. Visitor Visa -->
+      <article class="service-item-card">
+        <div class="service-card-media">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Family reuniting for a visit abroad">
+          <span class="service-number-badge">01</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Visitor Visa</h3>
+          <p>Bring your loved ones to visit with streamlined visitor visa processing and support.</p>
+          <a href="#visitor-visa" class="service-card-link">
+            Explore Visitor Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 02. Business Visa -->
+      <article class="service-item-card">
+        <div class="service-card-media">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Global business expansion and executive corporate towers">
+          <span class="service-number-badge">02</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Business Visa</h3>
+          <p>Expand your business globally with our comprehensive business visa and investment solutions.</p>
+          <a href="#business-visa" class="service-card-link">
+            Explore Business Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 03. Tourist Visa -->
+      <article class="service-item-card">
+        <div class="service-card-media">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Scenic international travel destination for tourists">
+          <span class="service-number-badge">03</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Tourist Visa</h3>
+          <p>Plan your dream vacation hassle-free with our visa processing expertise and travel guidance.</p>
+          <a href="#tourist-visa" class="service-card-link">
+            Explore Tourist Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 04. Work Visa -->
+      <article class="service-item-card">
+        <div class="service-card-media">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Modern international corporate workplace for skilled professionals">
+          <span class="service-number-badge">04</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Work Visa</h3>
+          <p>Secure employment opportunities in Canada, UK, Australia, USA and other developed nations.</p>
+          <a href="#work-visa" class="service-card-link">
+            Explore Work Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 05. Study Visa -->
+      <article class="service-item-card">
+        <div class="service-card-media">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="International university campus and graduating students">
+          <span class="service-number-badge">05</span>
+        </div>
+        <div class="service-card-body">
+          <h3>Study Visa</h3>
+          <p>Get admitted to top universities worldwide. We guide you through the entire application process.</p>
+          <a href="#study-visa" class="service-card-link">
+            Explore Study Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- DETAILED IMMIGRATION SERVICES SECTION -->
+<section class="detailed-services-section" id="detailed-services">
+  <div class="container">
+    
+    <!-- Section Intro Header -->
+    <div class="detailed-services-header">
+      <span class="detailed-eyebrow">IN-DEPTH VISA SOLUTIONS</span>
+      <h2>Detailed Immigration Services</h2>
+      <p>
+        Explore comprehensive guidelines, eligibility criteria, and documentation requirements for each of our core international visa categories.
+      </p>
+    </div>
+
+    <!-- All 5 Detailed Visa Blocks -->
+    <div class="detailed-services-list">
+
+      <!-- =========================================
+           01. VISITOR VISA
+           ========================================= -->
+      <article class="visa-detail-block" id="visitor-visa">
+        <div class="visa-detail-media">
+          <div class="visa-img-frame">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=80" alt="Family reuniting abroad with a Visitor Visa">
+          </div>
+          <span class="visa-step-badge">01</span>
+        </div>
+
+        <div class="visa-detail-content">
+          <span class="visa-tag">VISITOR VISA</span>
+          <h3>Bring Your Loved Ones Closer</h3>
+          <p class="visa-lead">
+            Bring your loved ones to visit with streamlined visitor visa processing and support.
+          </p>
+
+          <div class="visa-body-text">
+            <p>
+              A Visitor Visa allows individuals to travel to another country for tourism, family or friend visits, medical treatment, or short-term non-employment business activities. It is generally issued for a short and specific duration and does not permit employment, paid work, or long-term stays in the destination country.
+            </p>
+            <p>
+              Applicants must submit valid travel documents, including a passport, along with proof of sufficient financial resources to cover expenses during their stay. Additional requirements may include travel history, accommodation details, return flight information, and, in some cases, an invitation letter from a host in the destination country.
+            </p>
+            <p>
+              Applicants must also provide clear evidence of intent to return to their home country, such as employment proof, family ties, or property ownership.
+            </p>
+          </div>
+
+          <div class="visa-disclaimer-note">
+            <span class="note-icon">ℹ</span>
+            <p>
+              The approval of a visitor visa is based on the applicant meeting all eligibility criteria, providing accurate and complete documentation, and is ultimately subject to the discretion of the embassy or consulate reviewing the application.
+            </p>
+          </div>
+
+          <a href="#consultation" class="btn-visa-cta">
+            Apply for Visitor Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- =========================================
+           02. BUSINESS VISA (Alternating Layout)
+           ========================================= -->
+      <article class="visa-detail-block visa-reverse" id="business-visa">
+        <div class="visa-detail-media">
+          <div class="visa-img-frame">
+            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1000&q=80" alt="Executive corporate business expansion abroad">
+          </div>
+          <span class="visa-step-badge">02</span>
+        </div>
+
+        <div class="visa-detail-content">
+          <span class="visa-tag">BUSINESS VISA</span>
+          <h3>Expand Your Business Beyond Borders</h3>
+          <p class="visa-lead">
+            Expand your business globally with our comprehensive business visa and investment solutions.
+          </p>
+
+          <div class="visa-body-text">
+            <p>
+              A Business Visa allows individuals to travel to another country for short-term business-related activities such as attending meetings, conferences, trade fairs, exhibitions, training sessions, or business negotiations. It is typically issued for a limited duration and strictly does not permit employment, paid work, or long-term professional engagement in the host country.
+            </p>
+            <p>
+              Applicants are required to submit valid travel documents, including a passport, along with an official invitation or support letter from a recognized business organization or company in the destination country.
+            </p>
+            <p>
+              They must also provide proof of sufficient financial means to cover travel and stay expenses, as well as evidence of strong ties to their home country, such as employment, business ownership, or family commitments, to demonstrate their intent to return after the visit.
+            </p>
+          </div>
+
+          <div class="visa-disclaimer-note">
+            <span class="note-icon">ℹ</span>
+            <p>
+              The approval of a business visa depends on meeting the eligibility criteria, submitting accurate documentation, and the final discretion of the embassy or consulate handling the application.
+            </p>
+          </div>
+
+          <a href="#consultation" class="btn-visa-cta">
+            Apply for Business Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- =========================================
+           03. TOURIST VISA
+           ========================================= -->
+      <article class="visa-detail-block" id="tourist-visa">
+        <div class="visa-detail-media">
+          <div class="visa-img-frame">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="International sightseeing and leisure tourism">
+          </div>
+          <span class="visa-step-badge">03</span>
+        </div>
+
+        <div class="visa-detail-content">
+          <span class="visa-tag">TOURIST VISA</span>
+          <h3>Discover the World With Confidence</h3>
+          <p class="visa-lead">
+            Plan your dream vacation hassle-free with our visa processing expertise and travel guidance.
+          </p>
+
+          <div class="visa-body-text">
+            <p>
+              A Tourist Visa allows individuals to travel to a foreign country for tourism, sightseeing, leisure, or recreational purposes. It is typically granted for a short duration and strictly does not allow employment, paid activities, or long-term residence in the host country.
+            </p>
+            <p>
+              Applicants are required to submit valid travel documents, including a passport, along with proof of accommodation such as hotel bookings or an invitation from a host.
+            </p>
+            <p>
+              They must also demonstrate sufficient financial means to cover travel, lodging, and daily expenses during their stay. Additionally, applicants need to provide evidence of intent to return to their home country, which may include employment proof, family ties, or return travel tickets.
+            </p>
+          </div>
+
+          <div class="visa-disclaimer-note">
+            <span class="note-icon">ℹ</span>
+            <p>
+              The approval of a tourist visa depends on the applicant's ability to meet all eligibility requirements, submit complete and accurate documentation, and is ultimately subject to the discretion of the respective embassy or consulate.
+            </p>
+          </div>
+
+          <a href="#consultation" class="btn-visa-cta">
+            Apply for Tourist Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- =========================================
+           04. WORK VISA (Alternating Layout)
+           ========================================= -->
+      <article class="visa-detail-block visa-reverse" id="work-visa">
+        <div class="visa-detail-media">
+          <div class="visa-img-frame">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Skilled professionals working in an international office">
+          </div>
+          <span class="visa-step-badge">04</span>
+        </div>
+
+        <div class="visa-detail-content">
+          <span class="visa-tag">WORK VISA</span>
+          <h3>Build Your Career on a Global Stage</h3>
+          <p class="visa-lead">
+            Secure employment opportunities in Canada, UK, Australia, USA and other developed nations.
+          </p>
+
+          <div class="visa-body-text">
+            <p>
+              A Work Visa allows individuals to travel to a foreign country for employment purposes and grants legal authorization to work for a specific employer for a defined period. It is issued based on a valid job offer or employment contract from an employer in the host country.
+            </p>
+            <p>
+              Applicants are required to submit relevant educational certificates, professional qualifications, and proof of work experience, depending on the job role.
+            </p>
+            <p>
+              In many cases, the employer must act as a sponsor, fulfilling local labor and immigration requirements before the visa application can be approved. Work visas are generally granted for a fixed duration and may be renewable based on employment status and immigration rules.
+            </p>
+          </div>
+
+          <div class="visa-disclaimer-note">
+            <span class="note-icon">ℹ</span>
+            <p>
+              The approval of a work visa depends on the applicant meeting eligibility criteria, compliance with local labor laws and immigration regulations, submission of accurate documentation, and the final discretion of the issuing embassy or consulate.
+            </p>
+          </div>
+
+          <a href="#consultation" class="btn-visa-cta">
+            Apply for Work Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- =========================================
+           05. STUDY VISA
+           ========================================= -->
+      <article class="visa-detail-block" id="study-visa">
+        <div class="visa-detail-media">
+          <div class="visa-img-frame">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80" alt="International university campus and students">
+          </div>
+          <span class="visa-step-badge">05</span>
+        </div>
+
+        <div class="visa-detail-content">
+          <span class="visa-tag">STUDY VISA</span>
+          <h3>Turn Your Educational Dreams Into Reality</h3>
+          <p class="visa-lead">
+            Get admitted to top universities worldwide. We guide you through the entire application process.
+          </p>
+
+          <div class="visa-body-text">
+            <p>
+              A Study Visa allows individuals to travel to a foreign country to pursue academic or vocational education, including school, college, university, or professional training programs. It grants permission to enroll in a recognized educational institution for the duration of the approved course.
+            </p>
+            <p>
+              In most cases, a study visa does not allow full-time employment, though some countries permit limited part-time work under specific conditions.
+            </p>
+            <p>
+              Applicants must submit an official admission letter from a recognized institution, along with proof of sufficient financial support to cover tuition fees and living expenses.
+            </p>
+            <p>
+              Additional requirements typically include educational qualifications, language proficiency (if applicable), and evidence of intent to return to the home country after completing studies.
+            </p>
+          </div>
+
+          <div class="visa-disclaimer-note">
+            <span class="note-icon">ℹ</span>
+            <p>
+              The approval of a study visa depends on meeting eligibility criteria, compliance with the visa regulations of the host country, submission of accurate documentation, and the final discretion of the embassy or consulate.
+            </p>
+          </div>
+
+          <a href="#consultation" class="btn-visa-cta">
+            Apply for Study Visa <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- WHY CHOOSE PRESTIGE MIGRATION INTERNATIONAL SECTION -->
+<section class="service-why-choose" id="why-choose-prestige">
+  <div class="container">
+    <div class="swc-grid">
+      
+      <!-- Left Column: Eyebrow, Heading, Description & Image Showcase -->
+      <div class="swc-left">
+        <span class="swc-eyebrow">WHY CHOOSE PRESTIGE MIGRATION INTERNATIONAL?</span>
+        <h2 class="swc-title">Your Journey Deserves the Right Guidance</h2>
+        <p class="swc-desc">
+          We understand that immigration applications involve important decisions and documentation. Our focus is to provide personalized assistance and clear guidance throughout your application journey.
+        </p>
+
+        <div class="swc-image-frame">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Personalized visa guidance and international documentation consultation">
+        </div>
+      </div>
+
+      <!-- Right Column: 4 Feature Pillars -->
+      <div class="swc-right">
+        <div class="swc-pillars-grid">
+          
+          <!-- Pillar 1 -->
+          <div class="swc-pillar-card">
+            <div class="swc-pillar-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Personalized Guidance</h3>
+            <p>Support based on your individual requirements.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="swc-pillar-card">
+            <div class="swc-pillar-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3>Documentation Support</h3>
+            <p>Guidance for preparing application documents.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="swc-pillar-card">
+            <div class="swc-pillar-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>Global Opportunities</h3>
+            <p>Explore international destinations and visa options.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="swc-pillar-card">
+            <div class="swc-pillar-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3>Dedicated Assistance</h3>
+            <p>Support throughout your application journey.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FINAL CONSULTATION CTA SECTION -->
+<section class="final-consultation-section" id="consultation">
+  <div class="container">
+    <div class="consultation-banner">
+      
+      <!-- Content & Perks Column -->
+      <div class="consultation-content">
+        <span class="consultation-eyebrow">START YOUR GLOBAL JOURNEY</span>
+        <h2>Ready to Take the Next Step? Book Your Free Consultation</h2>
+        <p class="consultation-desc">
+          Speak directly with our certified immigration consultants to evaluate your eligibility, review your documentation checklist, and map out a clear timeline for your visa application.
+        </p>
+
+        <ul class="consultation-perks">
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Free 1-on-1 Eligibility Assessment</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Customized Visa &amp; Country Roadmap</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Transparent Process &amp; Zero Hidden Fees</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Action Buttons & Direct Contact Column -->
+      <div class="consultation-actions-card">
+        <h3>Connect With Our Experts</h3>
+        <p class="actions-subtitle">Choose how you would like to begin your application journey today.</p>
+
+        <div class="consultation-btn-group">
+          <a href="#booking-modal" class="btn-cta-primary">
+            Book Free Consultation <span aria-hidden="true">→</span>
+          </a>
+          <a href="tel:+96500000000" class="btn-cta-secondary">
+            Call Us Now: +965 0000 0000
+          </a>
+        </div>
+
+        <div class="consultation-direct-email">
+          <span>Prefer emailing us?</span>
+          <a href="mailto:info@prestigemigration.com">info@prestigemigration.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="container footer-content-wrap">
+    
+    <!-- Main Footer Columns -->
+    <div class="footer-grid">
+      
+      <!-- Col 1: Brand & Tagline -->
+      <div class="footer-col footer-brand-col">
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-badge">
+            <img src="./assets/logo/WhatsApp Image 2026-11-14 at 6.48.23 PM.jpeg" alt="Prestige Migration Logo">
+          </div>
+          <div class="footer-logo-text">
+            <h3>Prestige Migration International</h3>
+            <span>GLOBAL MOBILITY SOLUTIONS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Expert immigration consulting for your dream destination — work, study, business, visit and settle abroad with complete confidence.
+        </p>
+      </div>
+
+      <!-- Col 2: Explore Links -->
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#countries">Countries</a></li>
+          <li><a href="#about">Why Prestige</a></li>
+          <li><a href="#consultation">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact Info -->
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul class="footer-contact-list">
+          <li><a href="mailto:info@immisquare.com">info@immisquare.com</a></li>
+          <li>Kuwait: +965 6091 7575</li>
+          <li>United Arab Emirates: +971 50 287 0266</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Huge Serif Watermark Between Columns & Bottom Line -->
+    <div class="footer-watermark" aria-hidden="true">PRESTIGE</div>
+
+    <!-- Bottom Footer Bar (Divider line is on top of this) -->
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 Prestige Migration International. All rights reserved.</p>
+      
+      <!-- Scroll to Top Tab Button -->
+      <button type="button" class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top">
+        ^
+      </button>
+
+      <span class="footer-bottom-brand">GLOBAL MOBILITY SOLUTIONS</span>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

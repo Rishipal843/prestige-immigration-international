@@ -1,0 +1,410 @@
+/* =========================================
+   CONTACT HERO & MOUNTAIN DIVIDER STYLING
+   ========================================= */
+.contact-hero {
+  min-height: 70vh;
+  position: relative;
+  /* Keeps top bright white for navbar, darkens center slightly so gold "Contact Us" pops */
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.45) 22%,
+      rgba(14, 44, 84, 0.58) 55%,
+      rgba(14, 44, 84, 0.45) 100%
+    ),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0 140px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero-content h1 {
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 800;
+  color: #f59e0b;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 12px rgba(14, 44, 84, 0.35);
+}
+
+.breadcrumb {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #f59e0b;
+}
+
+/* Mountain Divider SVG Overlay */
+.mountain-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mountain-divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  fill: #ffffff; 
+}
+
+
+/* =========================================
+   CONTACT INFORMATION CARDS STYLING
+   ========================================= */
+.contact-cards-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+.contact-info-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 50px 32px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(14, 44, 84, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Highlighted Middle Card (Brand Navy Style matching screenshot) */
+.contact-info-card.card-highlighted {
+  background: #0e2c54;
+  border-color: #0e2c54;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(14, 44, 84, 0.2);
+}
+
+.contact-info-card.card-highlighted h3 {
+  color: #ffffff;
+}
+
+.contact-info-card.card-highlighted .card-details-text {
+  color: #cbd5e1;
+}
+
+.contact-info-card.card-highlighted .sub-text {
+  color: #94a3b8;
+}
+
+/* Floating Top-Left Icon Badge */
+.card-icon-badge {
+  position: absolute;
+  top: -22px;
+  left: 32px;
+  width: 48px;
+  height: 48px;
+  background: #143d73;
+  color: #f59e0b;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(14, 44, 84, 0.2);
+}
+
+.card-icon-badge.badge-light {
+  background: #f59e0b;
+  color: #0e2c54;
+}
+
+/* Card Typography */
+.contact-card-content h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0 0 14px 0;
+}
+
+.card-details-text {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0 0 24px 0;
+}
+
+.card-details-text strong {
+  color: #0e2c54;
+}
+
+.contact-info-card.card-highlighted .card-details-text strong {
+  color: #f59e0b;
+}
+
+.sub-text {
+  display: block;
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* Action Link */
+.card-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #143d73;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.arrow-icon {
+  font-size: 15px;
+  font-weight: 800;
+  transition: transform 0.2s ease;
+}
+
+.card-action-link:hover {
+  color: #f59e0b;
+  gap: 12px;
+}
+
+.card-action-link.link-light {
+  color: #f59e0b;
+}
+
+.card-action-link.link-light:hover {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ENQUIRY FORM & DUAL MAP SECTION STYLING
+   ========================================= */
+.enquiry-map-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.enquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* Left Column: Two Stacked Map Frames */
+.enquiry-map-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.map-embed-frame {
+  width: 100%;
+  flex: 1;
+  min-height: 270px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.map-embed-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  border: 0;
+  display: block;
+}
+
+/* Right Column: Enquiry Form Card */
+.enquiry-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 44px 38px;
+  box-shadow: 0 12px 32px rgba(14, 44, 84, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-card-header {
+  margin-bottom: 28px;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #143d73;
+  background: rgba(20, 61, 115, 0.08);
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.enquiry-form-card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0;
+}
+
+/* Form Controls */
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0e2c54;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 16px;
+  font-size: 14.5px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background: #ffffff;
+  border-color: #143d73;
+  box-shadow: 0 0 0 3px rgba(20, 61, 115, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* Submit Button (Solid Primary Navy matching homepage buttons) */
+.btn-enquiry-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e2c54;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: fit-content;
+  box-shadow: 0 8px 20px rgba(14, 44, 84, 0.2);
+  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+  margin-top: 6px;
+}
+
+.btn-enquiry-submit:hover {
+  background: #f59e0b;
+  color: #0e2c54;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 992px) {
+  .enquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .map-embed-frame,
+  .map-embed-frame iframe {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .enquiry-map-section {
+    padding: 60px 0;
+  }
+
+  .map-embed-frame,
+  .map-embed-frame iframe {
+    min-height: 230px;
+  }
+
+  .enquiry-form-card {
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .btn-enquiry-submit {
+    width: 100%;
+  }
+}
