@@ -1,0 +1,931 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Migration International - About Us
+  </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/about.css" />
+</head>
+<body>
+
+
+
+
+    <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <!-- Left: Logo -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo/prestige-logo-bg-remove.webp" alt="Prestige Migration International" />
+      </a>
+
+      <!-- Center / Mobile Drawer: Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="./index.html" class="nav-link" onclick="closeMobileMenu()">Home</a>
+
+        <div class="dropdown">
+          <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Services ▾</button>
+          <div class="dropdown-menu">
+            <a href="./service.html#study-visa" onclick="closeMobileMenu()">Study Abroad</a>
+            <a href="./service.html#work-visa" onclick="closeMobileMenu()">Work Permits</a>
+            <a href="./service.html#tourist-visa" onclick="closeMobileMenu()">Tourist Visa</a>
+            <a href="./service.html#visitor-visa" onclick="closeMobileMenu()">Visitor Visas</a>
+            <a href="./service.html#business-visa" onclick="closeMobileMenu()">Business Immigration</a>
+          </div>
+        </div>
+
+        <a href="./countries.html" class="nav-link" onclick="closeMobileMenu()">Countries</a>
+
+        <a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+        <a href="./contact.html" class="btn btn-primary mobile-cta" onclick="closeMobileMenu()">Apply Now</a>
+      </nav>
+
+      <!-- Right: Apply Button (Desktop Only) + Hamburger Toggle (Mobile Only) -->
+      <div class="nav-right">
+        <a href="./contact.html" class="btn btn-primary desktop-cta">Apply Now</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+
+    
+
+
+
+
+   <!-- ABOUT PAGE HERO SECTION (Global Geometric Backdrop) -->
+<section class="about-hero-section">
+  <div class="container">
+    <div class="about-hero-grid">
+      
+      <!-- Left Content Column -->
+      <div class="about-hero-content">
+        <span class="about-eyebrow">ABOUT PRESTIGE MIGRATION INTERNATIONAL</span>
+        <h1 class="about-title">
+          Making Global Dreams a Reality
+        </h1>
+        <p class="about-desc">
+          Every international journey begins with a dream. At Prestige Migration International, we help individuals and families explore opportunities beyond borders with clear guidance, personalized support, and a transparent approach to the immigration process.
+        </p>
+        <p class="about-subdesc">
+          Whether you are planning to study, work, travel, or expand your business internationally, we are here to help you take the next step with confidence.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="about-hero-btns">
+          <a href="./service.html" class="about-btn-primary">Explore Our Services</a>
+          <a href="./contact.html" class="about-btn-outline">Book a Consultation</a>
+        </div>
+      </div>
+
+      <!-- Right Visual Column (Subject + Universal Globe/Geometric Shapes) -->
+      <div class="about-hero-media">
+        
+        <!-- Decorative Universal Globe & Accent Dots (Replaces Flag) -->
+        <div class="global-backdrop-shapes" aria-hidden="true">
+          <svg viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Main Subtle Turquoise & Navy Globe Silhouette -->
+            <circle cx="240" cy="210" r="165" fill="url(#globeGrad)" />
+            <!-- Latitude & Longitude Meridian Rings -->
+            <ellipse cx="240" cy="210" rx="85" ry="165" stroke="#14b8a6" stroke-opacity="0.28" stroke-width="2" />
+            <ellipse cx="240" cy="210" rx="165" ry="65" stroke="#143d73" stroke-opacity="0.16" stroke-width="2" />
+            <line x1="75" y1="210" x2="405" y2="210" stroke="#143d73" stroke-opacity="0.16" stroke-width="2" />
+            <line x1="240" y1="45" x2="240" y2="375" stroke="#14b8a6" stroke-opacity="0.24" stroke-width="2" />
+            
+            <!-- Floating Brand Accent Dots (Matching Reference Composition) -->
+            <circle cx="62" cy="310" r="18" fill="#143d73" />
+            <circle cx="96" cy="365" r="8" fill="#f59e0b" />
+            <circle cx="405" cy="115" r="12" fill="#14b8a6" fill-opacity="0.75" />
+            <circle cx="385" cy="340" r="9" fill="#f59e0b" />
+
+            <defs>
+              <linearGradient id="globeGrad" x1="90" y1="50" x2="390" y2="370" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.22" />
+                <stop offset="100%" stop-color="#143d73" stop-opacity="0.14" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="about-subject-wrapper">
+  <img 
+    src="./assets/images/aboutpage_hero.webp" 
+    alt="Illuminated world globe highlighting global destinations and opportunities"
+  >
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- WHO WE ARE + HIGHLIGHTS & WHY CHOOSE US SECTION -->
+<section class="who-we-are-section" id="who-we-are">
+  <div class="container">
+    
+    <!-- Top Grid: Who We Are Story & Mission/Vision -->
+    <div class="who-we-are-grid">
+      
+      <!-- Left Column: Who We Are Story & Visual -->
+      <div class="who-we-are-story">
+        <span class="section-eyebrow">WHO WE ARE</span>
+        <h2 class="section-heading">Your Trusted Partner for Global Opportunities</h2>
+        
+        <p class="story-lead">
+          Prestige Migration International is focused on helping people understand and navigate international immigration opportunities.
+        </p>
+        <p class="story-text">
+          We believe every applicant has a different story, goal, and set of circumstances. That is why we emphasize individual attention, clear communication, and guidance tailored to each person's immigration objectives.
+        </p>
+
+        <!-- Accent Image Card -->
+        <div class="who-we-are-img-wrap">
+          <img 
+            src="./assets/images/about_whoweare.webp" 
+            alt="Prestige Migration International personalized consultation"
+          >
+        </div>
+      </div>
+
+      <!-- Right Column: Our Mission & Our Vision Cards -->
+      <div class="mission-vision-stack">
+        
+        <!-- Card 1: Our Mission -->
+        <div class="mv-card">
+          <div class="mv-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <div class="mv-content">
+            <h3>Our Mission</h3>
+            <p>
+              To make immigration information and guidance more accessible, helping individuals and families make informed decisions about their international future.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Our Vision (Highlighted Dark Navy Card) -->
+        <div class="mv-card mv-card-navy">
+          <div class="mv-icon-box mv-icon-gold">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <div class="mv-content">
+            <h3>Our Vision</h3>
+            <p>
+              To become a trusted name in immigration consultancy by building lasting relationships through professionalism, transparency, and client-focused support.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Divider Spacer -->
+    <div class="section-inner-divider"></div>
+
+    <!-- Bottom Part 1: Company Highlights Counters -->
+    <div class="company-highlights-container">
+      <div class="highlights-header">
+        <h3>Company Highlights</h3>
+        <p>Your trusted partner for a smooth and informed immigration journey.</p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <h4>5000+</h4>
+          <span>Happy Clients</span>
+        </div>
+        <div class="highlight-item">
+          <h4>10+</h4>
+          <span>Years of Experience</span>
+        </div>
+        <div class="highlight-item">
+          <h4>98%</h4>
+          <span>Success Rate</span>
+        </div>
+        <div class="highlight-item">
+          <h4>6</h4>
+          <span>Countries Served</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Part 2: Why Clients Choose Us Grid -->
+    <div class="why-choose-us-wrapper">
+      <div class="highlights-header">
+        <h3>Why Clients Choose Us</h3>
+      </div>
+
+      <div class="why-choose-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          </div>
+          <h4>Expert Guidance</h4>
+          <p>Our experienced consultants provide personalized guidance for every case.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <h4>Transparent Process</h4>
+          <p>Complete transparency in documentation and processing timelines.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h4>Affordable Services</h4>
+          <p>Competitive pricing with flexible payment options for different budgets.</p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </div>
+          <h4>24/7 Support</h4>
+          <p>Dedicated customer support to help address your questions and concerns.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CORE VALUES SECTION WITH GRADIENTS -->
+<section class="core-values-section" id="core-values">
+  <div class="container">
+    <div class="core-values-grid">
+      
+      <!-- Left Column: Title, Description & Airplane Graphic -->
+      <div class="core-values-left">
+        <span class="section-eyebrow">OUR CORE VALUES</span>
+        <h2 class="section-heading">
+          Our Core Values Shape Everything We Do
+        </h2>
+        <p class="section-desc">
+          With years of expertise in global immigration laws and visa processes, our commitment is built on trust, transparency, and tailored guidance to simplify your journey to settling abroad.
+        </p>
+        
+        <div class="core-airplane-wrap">
+          <img 
+            src="./assets/images/about_ourcorevalue.webp" 
+            alt="Airplane flying high for global immigration mobility"
+          >
+        </div>
+      </div>
+
+      <!-- Right Column: Stacked Horizontal Cards with Gradient Accents -->
+      <div class="core-values-stack">
+        
+        <!-- Card 1: Transparency -->
+        <div class="core-value-card">
+          <div class="core-icon-box">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <div class="core-content">
+            <h3>Transparency</h3>
+            <p>Clear communication and honest guidance throughout the process.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Personalized Support -->
+        <div class="core-value-card">
+          <div class="core-icon-box">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="core-content">
+            <h3>Personalized Support</h3>
+            <p>Understanding each applicant's goals and individual circumstances.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Professionalism -->
+        <div class="core-value-card">
+          <div class="core-icon-box">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+          </div>
+          <div class="core-content">
+            <h3>Professionalism</h3>
+            <p>A responsible and organized approach to every application.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Commitment -->
+        <div class="core-value-card">
+          <div class="core-icon-box">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div class="core-content">
+            <h3>Commitment</h3>
+            <p>Supporting clients with care, attention, and timely communication.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- WHAT MAKES US DIFFERENT (Timeline Process Section) -->
+<section class="what-makes-different-section" id="what-makes-us-different">
+  <div class="container">
+    <div class="diff-grid">
+      
+      <!-- Left Column: Section Intro -->
+      <div class="diff-left">
+        <span class="section-eyebrow">WHAT MAKES US DIFFERENT</span>
+        <h2 class="section-heading">
+          Immigration Guidance Built Around You
+        </h2>
+        <p class="section-desc">
+          Rather than treating every application the same, we focus on understanding your unique requirements and helping you identify suitable pathways.
+        </p>
+        <p class="section-subdesc">
+          Our step-by-step approach ensures complete clarity, personalized attention, and professional support at every stage of your immigration journey.
+        </p>
+      </div>
+
+      <!-- Right Column: Vertical Connected Timeline -->
+      <div class="diff-timeline-right">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- Step 01 -->
+        <div class="timeline-step">
+          <div class="step-marker"><span>01</span></div>
+          <div class="step-card">
+            <h3>Individual Assessment</h3>
+            <p>We consider your background, goals, and circumstances before discussing possible options.</p>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="timeline-step">
+          <div class="step-marker"><span>02</span></div>
+          <div class="step-card">
+            <h3>Document Guidance</h3>
+            <p>Understand the documents and information generally required for your application.</p>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="timeline-step">
+          <div class="step-marker"><span>03</span></div>
+          <div class="step-card">
+            <h3>Clear Communication</h3>
+            <p>Get updates and explanations so you can understand the process and your next steps.</p>
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="timeline-step">
+          <div class="step-marker"><span>04</span></div>
+          <div class="step-card">
+            <h3>Multiple Immigration Services</h3>
+            <p>Explore study, work, visitor, tourist, and business visa options tailored for you.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- COUNTRIES WE SUPPORT SECTION (Circular Flag Row) -->
+<section class="countries-flag-section" id="countries">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="countries-header">
+      <h2 class="section-heading">Prestige Migration Most Reliable Visa Consultants</h2>
+      <p class="section-desc">
+        Curabitur consectetur justo in odio ultrices vitae aliquet libero pretium simple ras quis tincidunt ipsumlis elit euodio uspendisse lobortis pretium simplmmy content visahub elit sed sagittis.
+      </p>
+    </div>
+
+    <!-- Horizontal Flag Row -->
+    <div class="countries-flag-row">
+      
+      <!-- 1. Canada -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/ca.png" alt="Canada flag">
+        </div>
+        <span>Canada</span>
+      </div>
+
+      <!-- 2. Australia -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/au.png" alt="Australia flag">
+        </div>
+        <span>Australia</span>
+      </div>
+
+      <!-- 3. United Kingdom -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/gb.png" alt="United Kingdom flag">
+        </div>
+        <span>United Kingdom</span>
+      </div>
+
+      <!-- 4. New Zealand -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/nz.png" alt="New Zealand flag">
+        </div>
+        <span>New Zealand</span>
+      </div>
+
+      <!-- 5. United States -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/us.png" alt="United States flag">
+        </div>
+        <span>United States</span>
+      </div>
+
+      <!-- 6. Europe (EU) -->
+      <div class="country-flag-item">
+        <div class="circular-flag">
+          <img src="https://flagcdn.com/w160/eu.png" alt="Europe flag">
+        </div>
+        <span>Europe</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================
+     ABOUT PAGE: 1. VISA PROCESS GUIDE (NAVY)
+     ========================================= -->
+<section class="abt-process-section" id="about-visa-process">
+  <div class="abt-container">
+    <div class="abt-process-layout">
+
+      <!-- Left Column: Intro & Overview -->
+      <div class="abt-process-intro">
+        <span class="abt-eyebrow abt-eyebrow-gold">VISA PROCESS GUIDE</span>
+        <h2 class="abt-heading abt-heading-light">Step-by-Step Guide to Make Your Immigration Journey Smooth</h2>
+        <p class="abt-desc abt-desc-light">
+          A clear, structured five-stage roadmap so you always know what happens next—from your first consultation to post-visa travel preparation.
+        </p>
+
+        <div class="abt-process-note">
+          <span class="abt-note-dot" aria-hidden="true"></span>
+          <p>Every stage is guided with transparent timelines, eligibility checks, and thorough file reviews.</p>
+        </div>
+      </div>
+
+      <!-- Right Column: Vertical Numbered Milestone Rail -->
+      <div class="abt-timeline" role="list">
+
+        <!-- Step 1 -->
+        <article class="abt-timeline-item" role="listitem">
+          <div class="abt-timeline-marker">
+            <span class="abt-step-circle">01</span>
+          </div>
+          <div class="abt-timeline-card">
+            <div class="abt-card-top">
+              <h3>Initial Consultation</h3>
+              <span class="abt-minus" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Connect with our immigration experts to discuss your goals, preferred country, and visa category. We understand your background, qualifications, and timelines to suggest the best possible immigration pathway.</p>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="abt-timeline-item" role="listitem">
+          <div class="abt-timeline-marker">
+            <span class="abt-step-circle">02</span>
+          </div>
+          <div class="abt-timeline-card">
+            <div class="abt-card-top">
+              <h3>Profile Evaluation</h3>
+              <span class="abt-minus" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Your profile is carefully assessed based on eligibility criteria such as education, work experience, language proficiency, and financial background. This helps us identify strengths and address any potential gaps early.</p>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="abt-timeline-item" role="listitem">
+          <div class="abt-timeline-marker">
+            <span class="abt-step-circle">03</span>
+          </div>
+          <div class="abt-timeline-card">
+            <div class="abt-card-top">
+              <h3>Document Preparation</h3>
+              <span class="abt-minus" aria-hidden="true">&minus;</span>
+            </div>
+            <p>We guide you through preparing and organizing all required documents including academic records, employment proofs, financial statements, and supporting letters. Accuracy and completeness are ensured to avoid rejections.</p>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="abt-timeline-item" role="listitem">
+          <div class="abt-timeline-marker">
+            <span class="abt-step-circle">04</span>
+          </div>
+          <div class="abt-timeline-card">
+            <div class="abt-card-top">
+              <h3>Application Submission</h3>
+              <span class="abt-minus" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Once documents are ready, we submit your application to the relevant authorities. Our team ensures compliance with current immigration laws and keeps you updated on every stage of the process.</p>
+          </div>
+        </article>
+
+        <!-- Step 5 -->
+        <article class="abt-timeline-item" role="listitem">
+          <div class="abt-timeline-marker">
+            <span class="abt-step-circle is-final">05</span>
+          </div>
+          <div class="abt-timeline-card is-highlighted">
+            <div class="abt-card-top">
+              <h3>Visa Approval &amp; Travel</h3>
+              <span class="abt-minus" aria-hidden="true">&minus;</span>
+            </div>
+            <p>After approval, we assist you with post-visa formalities such as travel planning, accommodation guidance, and pre-departure briefings. You are fully prepared to begin your journey confidently.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     ABOUT PAGE: 2. DOCUMENT CHECKLIST (LIGHT)
+     ========================================= -->
+<section class="abt-checklist-section" id="about-document-checklist">
+  <div class="abt-container">
+    <div class="abt-checklist-grid">
+
+      <!-- Left Summary Panel -->
+      <div class="abt-checklist-sidebar">
+        <span class="abt-eyebrow">DOCUMENT CHECKLIST</span>
+        <h2 class="abt-heading">Essential Documents Required for Immigration &amp; Visa Processing</h2>
+        <p class="abt-desc">
+          Having organized, accurate documentation ready early streamlines eligibility checks, verification, and submission across destination countries.
+        </p>
+
+        <div class="abt-sidebar-box">
+          <div class="abt-sidebar-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <strong>Accuracy &amp; Consistency</strong>
+            <span>Ensure details align across identity, academic, work, and financial records.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 2-Column Checklist Cards -->
+      <div class="abt-doc-cards">
+
+        <!-- 1. Valid Passport -->
+        <article class="abt-doc-card">
+          <div class="abt-doc-head">
+            <span class="abt-check-badge tone-navy" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <h3>Valid Passport</h3>
+            <span class="abt-minus-dark" aria-hidden="true">&minus;</span>
+          </div>
+          <p>Your passport must be valid for at least six months beyond your intended travel date. It should have sufficient blank pages for visa stamps and must be in good physical condition.</p>
+        </article>
+
+        <!-- 2. Educational Certificates -->
+        <article class="abt-doc-card">
+          <div class="abt-doc-head">
+            <span class="abt-check-badge tone-teal" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <h3>Educational Certificates</h3>
+            <span class="abt-minus-dark" aria-hidden="true">&minus;</span>
+          </div>
+          <p>Include all academic documents such as degrees, diplomas, transcripts, and mark sheets. These help verify your educational qualifications and eligibility for the selected visa category.</p>
+        </article>
+
+        <!-- 3. Work Experience Letters -->
+        <article class="abt-doc-card">
+          <div class="abt-doc-head">
+            <span class="abt-check-badge tone-gold" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <h3>Work Experience Letters</h3>
+            <span class="abt-minus-dark" aria-hidden="true">&minus;</span>
+          </div>
+          <p>Official experience letters from current and previous employers are required. These should clearly mention your designation, duration of employment, and key responsibilities.</p>
+        </article>
+
+        <!-- 4. Proof of Funds -->
+        <article class="abt-doc-card">
+          <div class="abt-doc-head">
+            <span class="abt-check-badge tone-teal" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <h3>Proof of Funds</h3>
+            <span class="abt-minus-dark" aria-hidden="true">&minus;</span>
+          </div>
+          <p>Financial documents such as bank statements, fixed deposits, or sponsor letters are required to prove your ability to support yourself during your stay abroad.</p>
+        </article>
+
+        <!-- 5. Medical & Police Clearance (Spans 2 cols on desktop) -->
+        <article class="abt-doc-card is-wide">
+          <div class="abt-doc-head">
+            <span class="abt-check-badge tone-gold" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <h3>Medical &amp; Police Clearance</h3>
+            <span class="abt-minus-dark" aria-hidden="true">&minus;</span>
+          </div>
+          <p>Medical examination reports and police clearance certificates ensure compliance with health and character requirements of the destination country.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FINAL CONSULTATION CTA SECTION -->
+<section class="final-consultation-section" id="consultation">
+  <div class="container">
+    <div class="consultation-banner">
+      
+      <!-- Content & Perks Column -->
+      <div class="consultation-content">
+        <span class="consultation-eyebrow">START YOUR GLOBAL JOURNEY</span>
+        <h2>Ready to Take the Next Step? Book Your Free Consultation</h2>
+        <p class="consultation-desc">
+          Speak directly with our certified immigration consultants to evaluate your eligibility, review your documentation checklist, and map out a clear timeline for your visa application.
+        </p>
+
+        <ul class="consultation-perks">
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Free 1-on-1 Eligibility Assessment</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Customized Visa &amp; Country Roadmap</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Transparent Process &amp; Zero Hidden Fees</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Action Buttons & Direct Contact Column -->
+      <div class="consultation-actions-card">
+        <h3>Connect With Our Experts</h3>
+        <p class="actions-subtitle">Choose how you would like to begin your application journey today.</p>
+
+        <div class="consultation-btn-group">
+          <a href="./contact.html" class="btn-cta-primary">
+            Book Free Consultation <span aria-hidden="true">→</span>
+          </a>
+          <a href="tel: +96560917575" class="btn-cta-secondary">
+            Call Us Now:  +96560917575
+          </a>
+          <a href="tel: +971502870266" class="btn-cta-secondary">
+            Call Us Now:   +971502870266
+          </a>
+        </div>
+
+        <div class="consultation-direct-email">
+          <span>Prefer emailing us?</span>
+          <a href="mailto:info@immisquare.com">info@immisquare.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="container footer-content-wrap">
+    
+    <!-- Main Footer Columns -->
+    <div class="footer-grid">
+      
+      <!-- Col 1: Brand & Tagline -->
+      <div class="footer-col footer-brand-col">
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-badge">
+            <img src="./assets/logo/prestige-logo.webp" alt="Prestige Migration Logo">
+          </div>
+          <div class="footer-logo-text">
+            <h3>Prestige Migration International</h3>
+            <span>GLOBAL MOBILITY SOLUTIONS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Expert immigration consulting for your dream destination — work, study, business, visit and settle abroad with complete confidence.
+        </p>
+      </div>
+
+      <!-- Col 2: Explore Links -->
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./countries.html">Countries</a></li>
+          <li><a href="./about.html">Why Prestige</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact Info -->
+      <div class="footer-col">
+        <h4>COUNTRIES</h4>
+        <ul class="footer-links">
+          <li><a href="./countries/canada.html">Canada</a></li>
+          <li><a href="./countries/us.html">United States</a></li>
+          <li><a href="./countries/uk.html">United Kingdom</a></li>
+          <li><a href="./countries/newzealand.html">New Zealand</a></li>
+          <li><a href="./countries/australia.html">Australia</a></li>
+          <li><a href="./countries/europe.html">Europe</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul class="footer-contact-list">
+          <li><a href="mailto:info@immisquare.com">info@immisquare.com</a></li>
+          <li>Kuwait: +965 6091 7575</li>
+          <li><span class="footer-address">Al Thuraya Tower, Floor 4, Hamad Al Mubarak Street, Block 7, Salmiya, Kuwait</span></li>
+          <li>United Arab Emirates: +971 50 287 0266</li>
+          <li><span class="footer-address">Prime Tower, 31st Floor, Dubai</span></li>
+        </ul>
+        <div class="footer-socials" aria-label="Social media">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Immisquare/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://x.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="X" class="social-icon"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://linkedin.com/company/immisquare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://instagram.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Huge Serif Watermark Between Columns & Bottom Line -->
+    <div class="footer-watermark" aria-hidden="true">PRESTIGE</div>
+
+    <!-- Bottom Footer Bar (Divider line is on top of this) -->
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 Prestige Migration International. All rights reserved.</p>
+      
+      <!-- Scroll to Top Tab Button -->
+      <button type="button" class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top">
+        ^
+      </button>
+
+      <span class="footer-bottom-brand">GLOBAL MOBILITY SOLUTIONS</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

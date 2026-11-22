@@ -12,7 +12,7 @@
       rgba(14, 44, 84, 0.58) 55%,
       rgba(14, 44, 84, 0.45) 100%
     ),
-    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80');
+    url('../assets/images/about_ourcorevalue.webp');
   background-size: cover;
   background-position: center;
   padding: 130px 0 140px;
@@ -26,7 +26,7 @@
 .contact-hero-content h1 {
   font-size: clamp(38px, 4.5vw, 54px);
   font-weight: 800;
-  color: #f59e0b;
+  color: #ffffff;
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 12px rgba(14, 44, 84, 0.35);
@@ -68,12 +68,25 @@
 }
 
 
+
+
+
+
+
+
+
 /* =========================================
    CONTACT INFORMATION CARDS STYLING
    ========================================= */
 .contact-cards-section {
-  padding: 80px 0;
+  padding: 90px 0 80px;
   background: #ffffff;
+}
+
+.contact-cards-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .contact-cards-grid {
@@ -102,7 +115,7 @@
   border-color: #cbd5e1;
 }
 
-/* Highlighted Middle Card (Brand Navy Style matching screenshot) */
+/* Highlighted Middle Card */
 .contact-info-card.card-highlighted {
   background: #0e2c54;
   border-color: #0e2c54;
@@ -144,6 +157,12 @@
 }
 
 /* Card Typography */
+.contact-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .contact-card-content h3 {
   font-size: 20px;
   font-weight: 800;
@@ -156,6 +175,9 @@
   line-height: 1.65;
   color: #475569;
   margin: 0 0 24px 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
 }
 
 .card-details-text strong {
@@ -182,6 +204,7 @@
   font-weight: 700;
   color: #143d73;
   text-decoration: none;
+  margin-top: auto;
   transition: color 0.2s ease, gap 0.2s ease;
 }
 
@@ -203,6 +226,70 @@
 .card-action-link.link-light:hover {
   color: #ffffff;
 }
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 992px) {
+  .contact-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 44px; /* Extra vertical room for floating -22px icon badge */
+  }
+
+  /* Make the 3rd card (Office Locations) span full width cleanly on tablets */
+  .contact-info-card:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-cards-section {
+    padding: 72px 0 64px;
+  }
+
+  .contact-cards-section .container {
+    padding: 0 18px;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    row-gap: 42px;
+  }
+
+  .contact-info-card:last-child {
+    grid-column: span 1;
+  }
+
+  .contact-info-card {
+    padding: 44px 24px 28px 24px;
+  }
+
+  .card-icon-badge {
+    left: 24px;
+    width: 44px;
+    height: 44px;
+    top: -20px;
+  }
+
+  .contact-card-content h3 {
+    font-size: 18.5px;
+  }
+
+  .card-details-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -351,7 +438,8 @@
   background: #0e2c54;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 1.15px;
   padding: 14px 30px;
   border: none;
   border-radius: 30px;

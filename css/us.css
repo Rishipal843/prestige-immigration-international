@@ -1,0 +1,745 @@
+/* =========================================
+   UNITED STATES PAGE HERO SECTION STYLING
+   ========================================= */
+.usa-hero-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 135px 0 85px;
+  /* New York City / Manhattan skyline backdrop; replace with local asset path if preferred */
+  background-image: url('../assets/images/us_hero.webp');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Whitish left fade for sharp text contrast, opening up on the right to showcase the US skyline */
+.usa-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(241, 247, 254, 0.92) 42%,
+    rgba(227, 238, 251, 0.44) 74%,
+    rgba(14, 44, 84, 0.16) 100%
+  );
+  z-index: 1;
+}
+
+.usa-hero-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.usa-hero-content {
+  max-width: 635px;
+}
+
+/* Eyebrow Badge */
+.usa-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  color: #143d73;
+  background: rgba(20, 61, 115, 0.09);
+  border: 1px solid rgba(20, 61, 115, 0.16);
+  padding: 6px 15px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.usa-hero-eyebrow .eyebrow-flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* Hero Heading */
+.usa-hero-title {
+  font-size: clamp(34px, 4.2vw, 50px);
+  font-weight: 800;
+  color: #0e2c54;
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+}
+
+/* Hero Tagline */
+.usa-hero-tagline {
+  font-size: clamp(16.5px, 1.8vw, 19px);
+  font-weight: 700;
+  color: #143d73;
+  line-height: 1.45;
+  margin: 0 0 18px 0;
+  padding-left: 14px;
+  border-left: 3.5px solid #f59e0b;
+}
+
+/* Hero Introduction */
+.usa-hero-desc {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0 0 34px 0;
+}
+
+/* Action Buttons */
+.usa-hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.usa-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: #0e2c54;
+  padding: 15px 30px;
+  font-size: 14.5px;
+  font-weight: 800;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.28);
+  transition: all 0.25s ease;
+}
+
+.usa-btn-primary:hover {
+  background: #0e2c54;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(14, 44, 84, 0.25);
+}
+
+.usa-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0e2c54;
+  border: 1.5px solid #cbd5e1;
+  padding: 14px 28px;
+  font-size: 14.5px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+}
+
+.usa-btn-outline:hover {
+  border-color: #143d73;
+  color: #143d73;
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 768px) {
+  .usa-hero-section {
+    min-height: 85vh;
+    padding: 115px 0 65px;
+    background-position: center;
+  }
+
+  .usa-hero-section::before {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(241, 247, 254, 0.90) 68%,
+      rgba(227, 238, 251, 0.60) 100%
+    );
+  }
+}
+
+@media (max-width: 576px) {
+  .usa-hero-section {
+    padding: 105px 0 55px;
+  }
+
+  .usa-hero-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .usa-btn-primary,
+  .usa-btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SHARED CONTAINER & HEADER (USA PAGE)
+   ========================================= */
+.usa-why-section .container,
+.usa-education-section .container,
+.usa-careers-section .container,
+.usa-pathways-section .container,
+.usa-life-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.usa-sec-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 54px auto;
+}
+
+.usa-eyebrow {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  color: #143d73;
+  background: rgba(20, 61, 115, 0.08);
+  padding: 6px 15px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.eyebrow-gold {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.usa-sec-heading {
+  font-size: clamp(30px, 3.6vw, 42px);
+  font-weight: 800;
+  color: #0e2c54;
+  line-height: 1.18;
+  margin: 0 0 14px 0;
+}
+
+.heading-light {
+  color: #ffffff;
+}
+
+.usa-sec-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+.desc-light {
+  color: #cbd5e1;
+}
+
+/* =========================================
+   1. WHY CHOOSE THE USA? (Light Theme)
+   ========================================= */
+.usa-why-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.usa-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.usa-why-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 8px 22px rgba(14, 44, 84, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.usa-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.usa-why-card:hover {
+  transform: translateY(-6px);
+  border-color: #143d73;
+  box-shadow: 0 18px 36px rgba(14, 44, 84, 0.1);
+}
+
+.usa-why-card:hover::before {
+  opacity: 1;
+}
+
+.usa-why-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 0.28s ease, background 0.28s ease, color 0.28s ease;
+}
+
+.icon-navy {
+  background: rgba(20, 61, 115, 0.1);
+  color: #143d73;
+}
+
+.icon-teal {
+  background: rgba(20, 184, 166, 0.14);
+  color: #0f766e;
+}
+
+.icon-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.usa-why-card:hover .usa-why-icon {
+  background: #0e2c54;
+  color: #f59e0b;
+  transform: scale(1.05);
+}
+
+.usa-why-card h3 {
+  font-size: 18.5px;
+  font-weight: 800;
+  color: #0e2c54;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+}
+
+.usa-why-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* =========================================
+   2. EDUCATION OPPORTUNITIES (Navy Theme)
+   ========================================= */
+.usa-education-section {
+  padding: 105px 0;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 16%, rgba(245, 158, 11, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 12% 85%, rgba(20, 184, 166, 0.15) 0%, transparent 48%),
+    linear-gradient(135deg, #0e2c54 0%, #143d73 100%);
+}
+
+.usa-education-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.usa-edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: blur(8px);
+  transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.usa-edu-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+}
+
+.usa-edu-pill {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+}
+
+.pill-gold-soft {
+  background: rgba(245, 158, 11, 0.16);
+  color: #f59e0b;
+}
+
+.pill-teal-soft {
+  background: rgba(20, 184, 166, 0.16);
+  color: #14b8a6;
+}
+
+.usa-edu-card:hover .pill-gold-soft,
+.usa-edu-card:hover .pill-teal-soft {
+  background: rgba(14, 44, 84, 0.1);
+  color: #0e2c54;
+}
+
+.usa-edu-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  transition: color 0.25s ease;
+}
+
+.usa-edu-card p {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #cbd5e1;
+  margin: 0;
+  transition: color 0.25s ease;
+}
+
+.usa-edu-card:hover h3 {
+  color: #0e2c54;
+}
+
+.usa-edu-card:hover p {
+  color: #475569;
+}
+
+/* =========================================
+   3. CAREER OPPORTUNITIES (Light Theme, 3x2)
+   ========================================= */
+.usa-careers-section {
+  padding: 105px 0;
+  background: #f8fafc;
+}
+
+.usa-careers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.usa-career-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 8px 22px rgba(14, 44, 84, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.usa-career-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.usa-career-card:hover {
+  transform: translateY(-6px);
+  border-color: #143d73;
+  box-shadow: 0 18px 36px rgba(14, 44, 84, 0.1);
+}
+
+.usa-career-card:hover::before {
+  opacity: 1;
+}
+
+.usa-career-num {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 4px 11px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+}
+
+.badge-teal {
+  background: rgba(20, 184, 166, 0.14);
+  color: #0f766e;
+}
+
+.badge-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.usa-career-card h3 {
+  font-size: 19.5px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0 0 10px 0;
+}
+
+.usa-career-card p {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #475569;
+  margin: 0;
+}
+
+/* =========================================
+   4. IMMIGRATION PATHWAYS (Navy Theme)
+   ========================================= */
+.usa-pathways-section {
+  padding: 105px 0;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(20, 184, 166, 0.15) 0%, transparent 46%),
+    radial-gradient(circle at 88% 82%, rgba(245, 158, 11, 0.15) 0%, transparent 48%),
+    linear-gradient(135deg, #0e2c54 0%, #143d73 100%);
+}
+
+.usa-pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.usa-pathway-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: blur(8px);
+  transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.usa-pathway-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+}
+
+.usa-pathway-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.tag-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: #f59e0b;
+}
+
+.tag-teal {
+  background: rgba(20, 184, 166, 0.16);
+  color: #14b8a6;
+}
+
+.usa-pathway-card:hover .tag-gold,
+.usa-pathway-card:hover .tag-teal {
+  background: rgba(14, 44, 84, 0.1);
+  color: #0e2c54;
+}
+
+.usa-pathway-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  transition: color 0.25s ease;
+}
+
+.usa-pathway-card p {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #cbd5e1;
+  margin: 0;
+  transition: color 0.25s ease;
+}
+
+.usa-pathway-card:hover h3 {
+  color: #0e2c54;
+}
+
+.usa-pathway-card:hover p {
+  color: #475569;
+}
+
+/* =========================================
+   5. LIFE IN THE USA (Light Theme)
+   ========================================= */
+.usa-life-section {
+  padding: 105px 0 115px;
+  background: #f8fafc;
+}
+
+.usa-life-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.usa-life-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 22px rgba(14, 44, 84, 0.04);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.usa-life-card:hover {
+  transform: translateY(-6px);
+  border-color: #143d73;
+  box-shadow: 0 18px 38px rgba(14, 44, 84, 0.11);
+}
+
+.usa-life-img {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.usa-life-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.usa-life-card:hover .usa-life-img img {
+  transform: scale(1.06);
+}
+
+.usa-city-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #0e2c54;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 4px 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
+}
+
+.usa-life-body {
+  padding: 24px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.usa-life-body h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0;
+}
+
+.usa-life-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1024px) {
+  .usa-why-grid,
+  .usa-education-grid,
+  .usa-pathways-grid,
+  .usa-life-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usa-careers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .usa-why-section,
+  .usa-education-section,
+  .usa-careers-section,
+  .usa-pathways-section,
+  .usa-life-section {
+    padding: 75px 0;
+  }
+
+  .usa-why-grid,
+  .usa-education-grid,
+  .usa-careers-grid,
+  .usa-pathways-grid,
+  .usa-life-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usa-why-card,
+  .usa-edu-card,
+  .usa-career-card,
+  .usa-pathway-card {
+    padding: 26px 22px;
+  }
+}

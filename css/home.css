@@ -1853,3 +1853,234 @@
     font-size: 30px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   FREQUENTLY ASKED QUESTIONS SECTION (INDEX.HTML)
+   ========================================= */
+.pmi-faq-section {
+  padding: 100px 0 110px;
+  background: #f8fafc;
+}
+
+.pmi-faq-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pmi-faq-header {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 48px auto;
+}
+
+.pmi-faq-eyebrow {
+ display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #143d73;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* .why-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+
+.why-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 30px;
+  max-width: 440px;
+} */
+
+.pmi-faq-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.pmi-faq-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+/* Accordion Items */
+.pmi-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pmi-faq-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(14, 44, 84, 0.04);
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.pmi-faq-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  /* background: linear-gradient(180deg, #143d73, #14b8a6, #f59e0b); */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pmi-faq-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(14, 44, 84, 0.07);
+}
+
+.pmi-faq-item.is-open {
+  border-color: #143d73;
+  box-shadow: 0 14px 32px rgba(14, 44, 84, 0.1);
+}
+
+.pmi-faq-item.is-open::before {
+  opacity: 1;
+}
+
+/* Question Button */
+.pmi-faq-trigger {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+  cursor: pointer;
+  color: #0e2c54;
+}
+
+.pmi-faq-q-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pmi-faq-num {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.14);
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.pmi-faq-item.is-open .pmi-faq-num {
+  background: #0e2c54;
+  color: #f59e0b;
+}
+
+.pmi-faq-question {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0e2c54;
+  line-height: 1.35;
+}
+
+/* Plus / Minus Icon Badge */
+.pmi-faq-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: rgba(20, 61, 115, 0.08);
+  color: #143d73;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.28s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.pmi-faq-trigger:hover .pmi-faq-icon {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.pmi-faq-item.is-open .pmi-faq-icon {
+  background: #f59e0b;
+  color: #0e2c54;
+  transform: rotate(45deg);
+}
+
+/* Smooth Accordion Panel */
+.pmi-faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.pmi-faq-item.is-open .pmi-faq-panel {
+  grid-template-rows: 1fr;
+}
+
+.pmi-faq-answer {
+  overflow: hidden;
+}
+
+.pmi-faq-answer p {
+  margin: 0;
+  padding: 0 24px 24px 72px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #475569;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 576px) {
+  .pmi-faq-section {
+    padding: 75px 0 85px;
+  }
+
+  .pmi-faq-trigger {
+    padding: 18px 18px;
+  }
+
+  .pmi-faq-question {
+    font-size: 15px;
+  }
+
+  .pmi-faq-answer p {
+    padding: 0 18px 20px 18px;
+    font-size: 14.5px;
+  }
+}

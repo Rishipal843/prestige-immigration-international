@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Migration International — Countries</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/countries.css" />
+</head>
+<body>
+
+     <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <!-- Left: Logo -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo/prestige-logo-bg-remove.webp" alt="Prestige Migration International" />
+      </a>
+
+      <!-- Center / Mobile Drawer: Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="./index.html" class="nav-link" onclick="closeMobileMenu()">Home</a>
+
+        <div class="dropdown">
+          <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Services ▾</button>
+          <div class="dropdown-menu">
+            <a href="./service.html#study-visa" onclick="closeMobileMenu()">Study Abroad</a>
+            <a href="./service.html#work-visa" onclick="closeMobileMenu()">Work Permits</a>
+            <a href="./service.html#tourist-visa" onclick="closeMobileMenu()">Tourist Visa</a>
+            <a href="./service.html#visitor-visa" onclick="closeMobileMenu()">Visitor Visas</a>
+            <a href="./service.html#business-visa" onclick="closeMobileMenu()">Business Immigration</a>
+          </div>
+        </div>
+
+        <a href="./countries.html" class="nav-link" onclick="closeMobileMenu()">Countries</a>
+
+        <a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+        <a href="./contact.html" class="btn btn-primary mobile-cta" onclick="closeMobileMenu()">Apply Now</a>
+      </nav>
+
+      <!-- Right: Apply Button (Desktop Only) + Hamburger Toggle (Mobile Only) -->
+      <div class="nav-right">
+        <a href="./contact.html" class="btn btn-primary desktop-cta">Apply Now</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+  <!-- COUNTRIES PAGE HERO SECTION -->
+<section class="countries-hero-section">
+  <div class="container">
+    <div class="countries-hero-content">
+      <span class="countries-hero-eyebrow">EXPLORE YOUR DESTINATION</span>
+      <h1 class="countries-hero-title">
+        Your Global Journey Starts Here
+      </h1>
+      <p class="countries-hero-desc">
+        Discover international opportunities for education, career growth, travel, and a new beginning. Explore destinations and find immigration pathways that match your goals.
+      </p>
+      
+      <!-- Action Button -->
+      <div class="countries-hero-action">
+        <a href="#destinations" class="countries-btn-primary">Explore Your Options</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- SECTION 2: FEATURED DESTINATIONS -->
+<section class="featured-destinations-section" id="destinations">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="dest-header">
+      <div class="dest-header-left">
+        <span class="section-eyebrow">FEATURED DESTINATIONS</span>
+        <h2 class="section-heading">Explore Our Popular Destinations</h2>
+      </div>
+      <p class="section-desc">
+        Discover international opportunities across some of the world's most sought-after destinations.
+      </p>
+    </div>
+
+    <!-- 5-Card Responsive Grid (3 Top, 2 Bottom) -->
+    <div class="dest-cards-grid">
+      
+      <!-- 1. Canada -->
+      <a href="./countries/canada.html" class="dest-card">
+        <div class="dest-img-box">
+          <img src="./assets/images/countries_canada.webp" alt="Canada immigration pathways">
+          <!-- Cutout Corner Circular Arrow Badge -->
+          <div class="dest-arrow-cutout">
+            <span class="dest-arrow-circle circle-navy">↗</span>
+          </div>
+        </div>
+        <div class="dest-card-body">
+<h3>
+  <img src="https://flagcdn.com/w40/ca.png" alt="Canada flag" class="inline-flag">
+  Canada
+</h3>
+          <p>Study, work and permanent residence pathways.</p>
+          <span class="dest-explore-link">Explore Canada →</span>
+          <div class="dest-tags">
+            <span class="dest-tag tag-navy">STUDY</span>
+            <span class="dest-tag tag-gold">WORK</span>
+            <span class="dest-tag tag-teal">PR</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. United Kingdom -->
+      <a href="./countries/uk.html" class="dest-card">
+        <div class="dest-img-box">
+          <img src="./assets/images/countries_uk.webp" alt="United Kingdom opportunities">
+          <div class="dest-arrow-cutout">
+            <span class="dest-arrow-circle circle-gold">↗</span>
+          </div>
+        </div>
+        <div class="dest-card-body">
+<h3>
+  <img src="https://flagcdn.com/w40/gb.png" alt="United Kingdom flag" class="inline-flag">
+  United Kingdom
+</h3>
+          <p>Education, skilled employment and travel.</p>
+          <span class="dest-explore-link">Explore UK →</span>
+          <div class="dest-tags">
+            <span class="dest-tag tag-navy">EDUCATION</span>
+            <span class="dest-tag tag-teal">SKILLED WORK</span>
+            <span class="dest-tag tag-gold">TRAVEL</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Australia -->
+      <a href="./countries/australia.html" class="dest-card">
+        <div class="dest-img-box">
+          <img src="./assets/images/countries_australia.webp" alt="Australia migration options">
+          <div class="dest-arrow-cutout">
+            <span class="dest-arrow-circle circle-teal">↗</span>
+          </div>
+        </div>
+        <div class="dest-card-body">
+<h3>
+  <img src="https://flagcdn.com/w40/au.png" alt="Australia flag" class="inline-flag">
+  Australia
+</h3>
+          <p>Skilled migration, study and work opportunities.</p>
+          <span class="dest-explore-link">Explore Australia →</span>
+          <div class="dest-tags">
+            <span class="dest-tag tag-teal">MIGRATION</span>
+            <span class="dest-tag tag-navy">STUDY</span>
+            <span class="dest-tag tag-gold">WORK</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. United States -->
+      <a href="./countries/us.html" class="dest-card">
+        <div class="dest-img-box">
+          <img src="./assets/images/countries_us.webp" alt="United States opportunities">
+          <div class="dest-arrow-cutout">
+            <span class="dest-arrow-circle circle-gold">↗</span>
+          </div>
+        </div>
+        <div class="dest-card-body">
+<h3>
+  <img src="https://flagcdn.com/w40/us.png" alt="United States flag" class="inline-flag">
+  United States
+</h3>
+          <p>Higher education, careers and business travel.</p>
+          <span class="dest-explore-link">Explore USA →</span>
+          <div class="dest-tags">
+            <span class="dest-tag tag-navy">HIGHER ED</span>
+            <span class="dest-tag tag-gold">BUSINESS</span>
+            <span class="dest-tag tag-teal">CAREERS</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. New Zealand -->
+      <a href="./countries/newzealand.html" class="dest-card">
+        <div class="dest-img-box">
+          <img src="./assets/images/countries_newzealand.webp" alt="New Zealand residence options">
+          <div class="dest-arrow-cutout">
+            <span class="dest-arrow-circle circle-navy">↗</span>
+          </div>
+        </div>
+        <div class="dest-card-body">
+<h3>
+  <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand flag" class="inline-flag">
+  New Zealand
+</h3>
+          <p>Education, skilled work and residence options.</p>
+          <span class="dest-explore-link">Explore New Zealand →</span>
+          <div class="dest-tags">
+            <span class="dest-tag tag-navy">EDUCATION</span>
+            <span class="dest-tag tag-teal">RESIDENCE</span>
+            <span class="dest-tag tag-gold">WORK</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- SECTION 3: EUROPEAN DESTINATIONS -->
+<section class="europe-destinations-section" id="europe">
+  <div class="container">
+    <div class="europe-showcase-box">
+
+      <!-- Top Split Header -->
+      <div class="europe-header">
+        <div class="europe-header-left">
+          <span class="europe-eyebrow">
+            <img src="https://flagcdn.com/w40/eu.png" alt="European Union flag" class="eyebrow-flag">
+            EUROPEAN DESTINATIONS
+          </span>
+          <h2 class="europe-heading">Explore Opportunities Across Europe</h2>
+        </div>
+        <p class="europe-desc">
+          Discover diverse education systems, international career opportunities, and cultural experiences across Europe.
+        </p>
+      </div>
+
+      <!-- Full-Width Responsive 5-Landmark Collage Banner -->
+      <div class="europe-banner-wrap">
+        <img
+          src="./assets/images/countries_europe.webp"
+          alt="Brandenburg Gate in Germany, Eiffel Tower in France, Colosseum in Italy, Amsterdam canal in the Netherlands, and Stockholm skyline in Sweden"
+          class="europe-banner-img"
+        >
+      </div>
+
+      <!-- 5-Country Responsive Row -->
+      <div class="europe-countries-grid">
+
+        <!-- 1. Germany -->
+        <a href="./countries/europe.html#germany" class="europe-country-card">
+          <div class="europe-flag-wrap">
+            <img src="https://flagcdn.com/w80/de.png" alt="Germany flag">
+          </div>
+          <h3>Germany</h3>
+          <span class="europe-link">Explore Country →</span>
+        </a>
+
+        <!-- 2. France -->
+        <a href="./countries/europe.html#france" class="europe-country-card">
+          <div class="europe-flag-wrap">
+            <img src="https://flagcdn.com/w80/fr.png" alt="France flag">
+          </div>
+          <h3>France</h3>
+          <span class="europe-link">Explore Country →</span>
+        </a>
+
+        <!-- 3. Italy -->
+        <a href="./countries/europe.html#italy" class="europe-country-card">
+          <div class="europe-flag-wrap">
+            <img src="https://flagcdn.com/w80/it.png" alt="Italy flag">
+          </div>
+          <h3>Italy</h3>
+          <span class="europe-link">Explore Country →</span>
+        </a>
+
+        <!-- 4. Netherlands -->
+        <a href="./countries/europe.html#netherlands" class="europe-country-card">
+          <div class="europe-flag-wrap">
+            <img src="https://flagcdn.com/w80/nl.png" alt="Netherlands flag">
+          </div>
+          <h3>Netherlands</h3>
+          <span class="europe-link">Explore Country →</span>
+        </a>
+
+        <!-- 5. Sweden -->
+        <a href="./countries/europe.html#sweden" class="europe-country-card">
+          <div class="europe-flag-wrap">
+            <img src="https://flagcdn.com/w80/se.png" alt="Sweden flag">
+          </div>
+          <h3>Sweden</h3>
+          <span class="europe-link">Explore Country →</span>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION 4: FIND YOUR VISA PATHWAY -->
+<section class="visa-pathway-section" id="visa-pathway">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="pathway-header">
+      <span class="section-eyebrow">FIND YOUR VISA PATHWAY</span>
+      <h2 class="section-heading">What Are You Planning?</h2>
+      <p class="section-desc">
+        Choose your purpose and explore the available immigration services.
+      </p>
+    </div>
+
+    <!-- 4-Card Pathway Grid -->
+    <div class="pathway-grid">
+      
+      <!-- 1. Study Abroad -->
+      <div class="pathway-card">
+        <div class="pathway-icon-box icon-navy">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <h3>Study Abroad</h3>
+        <p>Explore international education.</p>
+      </div>
+
+      <!-- 2. Work Abroad -->
+      <div class="pathway-card">
+        <div class="pathway-icon-box icon-gold">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </div>
+        <h3>Work Abroad</h3>
+        <p>Discover employment pathways.</p>
+      </div>
+
+      <!-- 3. Tourism -->
+      <div class="pathway-card">
+        <div class="pathway-icon-box icon-teal">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+        </div>
+        <h3>Tourism</h3>
+        <p>Plan your international trip.</p>
+      </div>
+
+      <!-- 4. Permanent Residence -->
+      <div class="pathway-card">
+        <div class="pathway-icon-box icon-navy-gold">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <h3>Permanent Residence</h3>
+        <p>Explore eligible settlement options.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION 5: WHY CHOOSE PRESTIGE? -->
+<section class="why-prestige-section" id="why-choose-prestige">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="why-prestige-header">
+      <span class="why-prestige-eyebrow">WHY CHOOSE PRESTIGE?</span>
+      <h2 class="why-prestige-heading">Trusted Guidance for Every Step of Your Journey</h2>
+      <p class="why-prestige-desc">
+        We combine individualized attention, honest communication, and structured support to help you navigate international immigration pathways with confidence.
+      </p>
+    </div>
+
+    <!-- 4-Card Benefit Grid -->
+    <div class="why-prestige-grid">
+      
+      <!-- Card 1: Personalized Immigration Guidance -->
+      <div class="why-prestige-card">
+        <div class="why-prestige-icon icon-gold-accent">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <h3>Personalized Immigration Guidance</h3>
+        <p>Tailored advice aligned with your background, goals, and preferred destination pathways.</p>
+      </div>
+
+      <!-- Card 2: Transparent Documentation Process -->
+      <div class="why-prestige-card">
+        <div class="why-prestige-icon icon-teal-accent">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <path d="M9 15l2 2 4-4"></path>
+          </svg>
+        </div>
+        <h3>Transparent Documentation Process</h3>
+        <p>Clear checklists, honest expectations, and straightforward guidance on required paperwork.</p>
+      </div>
+
+      <!-- Card 3: Professional Consultation -->
+      <div class="why-prestige-card">
+        <div class="why-prestige-icon icon-gold-accent">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </div>
+        <h3>Professional Consultation</h3>
+        <p>An organized, responsible, and attentive approach to assessing your immigration options.</p>
+      </div>
+
+      <!-- Card 4: Dedicated Client Support -->
+      <div class="why-prestige-card">
+        <div class="why-prestige-icon icon-teal-accent">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </div>
+        <h3>Dedicated Client Support</h3>
+        <p>Timely updates and responsive communication to answer your questions at every stage.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================
+     COUNTRIES PAGE: 1. VISA PROCESS GUIDE (NAVY)
+     ========================================= -->
+<section class="cnt-process-section" id="countries-visa-process">
+  <div class="cnt-container">
+
+    <!-- Section Header -->
+    <div class="cnt-sec-header">
+      <span class="cnt-eyebrow cnt-eyebrow-gold">VISA PROCESS GUIDE</span>
+      <h2 class="cnt-heading cnt-heading-light">Step-by-Step Guide to Make Your Immigration Journey Smooth</h2>
+      <p class="cnt-desc cnt-desc-light">
+        Follow a clear five-stage process across your chosen destination country—from initial planning to travel readiness.
+      </p>
+    </div>
+
+    <!-- 5-Step Process Grid -->
+    <div class="cnt-process-grid">
+
+      <!-- Step 1 -->
+      <article class="cnt-step-card">
+        <div class="cnt-step-meta">
+          <span class="cnt-step-num tone-gold">01</span>
+          <span class="cnt-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Initial Consultation</h3>
+        <p>Connect with our immigration experts to discuss your goals, preferred country, and visa category. We understand your background, qualifications, and timelines to suggest the best possible immigration pathway.</p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="cnt-step-card">
+        <div class="cnt-step-meta">
+          <span class="cnt-step-num tone-teal">02</span>
+          <span class="cnt-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Profile Evaluation</h3>
+        <p>Your profile is carefully assessed based on eligibility criteria such as education, work experience, language proficiency, and financial background. This helps us identify strengths and address any potential gaps early.</p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="cnt-step-card">
+        <div class="cnt-step-meta">
+          <span class="cnt-step-num tone-gold">03</span>
+          <span class="cnt-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Document Preparation</h3>
+        <p>We guide you through preparing and organizing all required documents including academic records, employment proofs, financial statements, and supporting letters. Accuracy and completeness are ensured to avoid rejections.</p>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="cnt-step-card">
+        <div class="cnt-step-meta">
+          <span class="cnt-step-num tone-teal">04</span>
+          <span class="cnt-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Application Submission</h3>
+        <p>Once documents are ready, we submit your application to the relevant authorities. Our team ensures compliance with current immigration laws and keeps you updated on every stage of the process.</p>
+      </article>
+
+      <!-- Step 5 -->
+      <article class="cnt-step-card is-last">
+        <div class="cnt-step-meta">
+          <span class="cnt-step-num tone-gold">05</span>
+          <span class="cnt-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Visa Approval &amp; Travel</h3>
+        <p>After approval, we assist you with post-visa formalities such as travel planning, accommodation guidance, and pre-departure briefings. You are fully prepared to begin your journey confidently.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================
+     COUNTRIES PAGE: 2. DOCUMENT CHECKLIST (LIGHT)
+     ========================================= -->
+<section class="cnt-checklist-section" id="countries-document-checklist">
+  <div class="cnt-container">
+
+    <!-- Section Header -->
+    <div class="cnt-sec-header">
+      <span class="cnt-eyebrow">DOCUMENT CHECKLIST</span>
+      <h2 class="cnt-heading">Essential Documents Required for Immigration &amp; Visa Processing</h2>
+      <p class="cnt-desc">
+        Key records commonly requested across destination countries to verify identity, qualifications, finances, and eligibility.
+      </p>
+    </div>
+
+    <!-- 5-Card Checklist Grid (3 Top, 2 Bottom) -->
+    <div class="cnt-checklist-grid">
+
+      <!-- 1. Valid Passport -->
+      <article class="cnt-doc-card">
+        <div class="cnt-doc-top">
+          <span class="cnt-check-icon icon-navy" aria-hidden="true">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="cnt-doc-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Valid Passport</h3>
+        <p>Your passport must be valid for at least six months beyond your intended travel date. It should have sufficient blank pages for visa stamps and must be in good physical condition.</p>
+      </article>
+
+      <!-- 2. Educational Certificates -->
+      <article class="cnt-doc-card">
+        <div class="cnt-doc-top">
+          <span class="cnt-check-icon icon-teal" aria-hidden="true">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="cnt-doc-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Educational Certificates</h3>
+        <p>Include all academic documents such as degrees, diplomas, transcripts, and mark sheets. These help verify your educational qualifications and eligibility for the selected visa category.</p>
+      </article>
+
+      <!-- 3. Work Experience Letters -->
+      <article class="cnt-doc-card">
+        <div class="cnt-doc-top">
+          <span class="cnt-check-icon icon-gold" aria-hidden="true">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="cnt-doc-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Work Experience Letters</h3>
+        <p>Official experience letters from current and previous employers are required. These should clearly mention your designation, duration of employment, and key responsibilities.</p>
+      </article>
+
+      <!-- 4. Proof of Funds -->
+      <article class="cnt-doc-card is-bottom">
+        <div class="cnt-doc-top">
+          <span class="cnt-check-icon icon-teal" aria-hidden="true">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="cnt-doc-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Proof of Funds</h3>
+        <p>Financial documents such as bank statements, fixed deposits, or sponsor letters are required to prove your ability to support yourself during your stay abroad.</p>
+      </article>
+
+      <!-- 5. Medical & Police Clearance -->
+      <article class="cnt-doc-card is-bottom">
+        <div class="cnt-doc-top">
+          <span class="cnt-check-icon icon-gold" aria-hidden="true">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="cnt-doc-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Medical &amp; Police Clearance</h3>
+        <p>Medical examination reports and police clearance certificates ensure compliance with health and character requirements of the destination country.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FINAL CONSULTATION CTA SECTION -->
+<section class="final-consultation-section" id="consultation">
+  <div class="container">
+    <div class="consultation-banner">
+      
+      <!-- Content & Perks Column -->
+      <div class="consultation-content">
+        <span class="consultation-eyebrow">START YOUR GLOBAL JOURNEY</span>
+        <h2>Ready to Take the Next Step? Book Your Free Consultation</h2>
+        <p class="consultation-desc">
+          Speak directly with our certified immigration consultants to evaluate your eligibility, review your documentation checklist, and map out a clear timeline for your visa application.
+        </p>
+
+        <ul class="consultation-perks">
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Free 1-on-1 Eligibility Assessment</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Customized Visa &amp; Country Roadmap</span>
+          </li>
+          <li>
+            <span class="perk-check">✓</span>
+            <span>Transparent Process &amp; Zero Hidden Fees</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Action Buttons & Direct Contact Column -->
+      <div class="consultation-actions-card">
+        <h3>Connect With Our Experts</h3>
+        <p class="actions-subtitle">Choose how you would like to begin your application journey today.</p>
+
+        <div class="consultation-btn-group">
+          <a href="./contact.html" class="btn-cta-primary">
+            Book Free Consultation <span aria-hidden="true">→</span>
+          </a>
+          <a href="tel: +96560917575" class="btn-cta-secondary">
+            Call Us Now:  +96560917575
+          </a>
+          <a href="tel: +971502870266" class="btn-cta-secondary">
+            Call Us Now:   +971502870266
+          </a>
+        </div>
+
+        <div class="consultation-direct-email">
+          <span>Prefer emailing us?</span>
+          <a href="mailto:info@immisquare.com">info@immisquare.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-content-wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand-col">
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-badge">
+            <img src="./assets/logo/prestige-logo.webp" alt="Prestige Migration Logo">
+          </div>
+          <div class="footer-logo-text">
+            <h3>Prestige Migration International</h3>
+            <span>GLOBAL MOBILITY SOLUTIONS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Expert immigration consulting for your dream destination — work, study, business, visit and settle abroad with complete confidence.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <ul class="footer-links">
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./countries.html">Countries</a></li>
+          <li><a href="./about.html">Why Prestige</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>COUNTRIES</h4>
+        <ul class="footer-links">
+          <li><a href="./countries/canada.html">Canada</a></li>
+          <li><a href="./countries/us.html">United States</a></li>
+          <li><a href="./countries/uk.html">United Kingdom</a></li>
+          <li><a href="./countries/newzealand.html">New Zealand</a></li>
+          <li><a href="./countries/australia.html">Australia</a></li>
+          <li><a href="./countries/europe.html">Europe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul class="footer-contact-list">
+          <li><a href="mailto:info@immisquare.com">info@immisquare.com</a></li>
+          <li>Kuwait: +965 6091 7575</li>
+          <li><span class="footer-address">Al Thuraya Tower, Floor 4, Hamad Al Mubarak Street, Block 7, Salmiya, Kuwait</span></li>
+          <li>United Arab Emirates: +971 50 287 0266</li>
+          <li><span class="footer-address">Prime Tower, 31st Floor, Dubai</span></li>
+        </ul>
+        <div class="footer-socials" aria-label="Social media">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Immisquare/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://x.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="X" class="social-icon"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://linkedin.com/company/immisquare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://instagram.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-watermark" aria-hidden="true">PRESTIGE</div>
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 Prestige Migration International. All rights reserved.</p>
+      <button type="button" class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top">^</button>
+      <span class="footer-bottom-brand">GLOBAL MOBILITY SOLUTIONS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/script.js"></script>
+    
+</body>
+</html>

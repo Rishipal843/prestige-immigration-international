@@ -1,0 +1,1361 @@
+/* =========================================
+   COUNTRIES PAGE HERO SECTION STYLING
+   ========================================= */
+.countries-hero-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 140px 0 90px;
+  background-image: url('../assets/imaegs/countries.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Gradient overlay: Solid light/white on the left for dark text, fading transparent to the right */
+.countries-hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg, 
+    rgba(255, 255, 255, 0.98) 0%, 
+    rgba(255, 255, 255, 0.92) 35%, 
+    rgba(241, 247, 254, 0.65) 60%, 
+    rgba(20, 61, 115, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.countries-hero-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.countries-hero-content {
+  max-width: 600px;
+}
+
+/* Eyebrow Label (Darker gold/navy for visibility on white) */
+.countries-hero-eyebrow {
+ display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #143d73;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* Main Heading -> Changed to Deep Navy (#0e2c54) for high contrast on white */
+.countries-hero-title {
+  font-size: clamp(36px, 4.5vw, 54px);
+  font-weight: 800;
+  color: #0e2c54;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+}
+
+/* Description Text -> Changed to Dark Slate (#334155) for sharp readability */
+.countries-hero-desc {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0 0 36px 0;
+}
+
+/* Action Button */
+.countries-hero-action {
+  display: flex;
+  align-items: center;
+}
+
+.countries-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: #0e2c54;
+  padding: 15px 32px;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
+  transition: all 0.25s ease;
+}
+
+.countries-btn-primary:hover {
+  background: #0e2c54;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(14, 44, 84, 0.25);
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   SECTION 2: FEATURED DESTINATIONS STYLING
+   ========================================= */
+.featured-destinations-section {
+  padding: 105px 0;
+  background: #f8fafc; /* Clean light canvas so white card cutouts blend seamlessly */
+  position: relative;
+}
+
+.featured-destinations-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Layout (Inspired by Reference Split Top) */
+.dest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 54px;
+  flex-wrap: wrap;
+}
+
+.dest-header-left {
+  max-width: 560px;
+}
+
+.dest-header .section-eyebrow {
+ display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #143d73;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.dest-header .section-heading {
+   font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #0f172a;
+  margin: 0;
+}
+
+.dest-header .section-desc {
+  max-width: 420px;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+/* Responsive 5-Card Grid */
+.dest-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px;
+}
+
+/* Top row: 3 cards (each spans 2 columns of 6) */
+.dest-card:nth-child(1),
+.dest-card:nth-child(2),
+.dest-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* Bottom row: 2 large cards (each spans 3 columns of 6) */
+.dest-card:nth-child(4),
+.dest-card:nth-child(5) {
+  grid-column: span 3;
+}
+
+/* Card Styling */
+.dest-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image Container with Rounded Corners */
+.dest-img-box {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(14, 44, 84, 0.08);
+}
+
+.dest-card:nth-child(4) .dest-img-box,
+.dest-card:nth-child(5) .dest-img-box {
+  height: 300px;
+}
+
+.dest-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.dest-card:hover .dest-img-box img {
+  transform: scale(1.06);
+}
+
+/* Reference-Inspired Bottom-Right Cutout Corner & Circular Arrow */
+.dest-arrow-cutout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 74px;
+  height: 74px;
+  background: #f8fafc; /* Matches section background to create smooth notch cutout */
+  border-top-left-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.dest-arrow-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Brand Color Variations for Circular Buttons */
+.circle-navy {
+  background: rgba(20, 61, 115, 0.14);
+  color: #143d73;
+}
+
+.circle-gold {
+  background: rgba(245, 158, 11, 0.2);
+  color: #b45309;
+}
+
+.circle-teal {
+  background: rgba(20, 184, 166, 0.18);
+  color: #0f766e;
+}
+
+.dest-card:hover .dest-arrow-circle {
+  background: #0e2c54;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* Card Text Body */
+.dest-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4px;
+}
+
+.dest-card-body h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag-emoji {
+  font-size: 22px;
+}
+
+.dest-card-body p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0 0 12px 0;
+}
+
+.dest-explore-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #143d73;
+  margin-bottom: 14px;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dest-card:hover .dest-explore-link {
+  color: #f59e0b;
+  transform: translateX(4px);
+}
+
+/* Pill Badges (Matching Reference Bottom Tags) */
+.dest-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dest-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.tag-navy {
+  background: rgba(20, 61, 115, 0.1);
+  color: #143d73;
+}
+
+.tag-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.tag-teal {
+  background: rgba(20, 184, 166, 0.15);
+  color: #0f766e;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1024px) {
+  .dest-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dest-card:nth-child(1),
+  .dest-card:nth-child(2),
+  .dest-card:nth-child(3),
+  .dest-card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .dest-card:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .dest-card:nth-child(4) .dest-img-box,
+  .dest-card:nth-child(5) .dest-img-box {
+    height: 270px;
+  }
+}
+
+@media (max-width: 640px) {
+  .featured-destinations-section {
+    padding: 70px 0;
+  }
+
+  .dest-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dest-card:nth-child(1),
+  .dest-card:nth-child(2),
+  .dest-card:nth-child(3),
+  .dest-card:nth-child(4),
+  .dest-card:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .dest-img-box {
+    height: 240px;
+  }
+}
+
+
+.dest-card-body h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inline-flag {
+  width: 26px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(14, 44, 84, 0.15);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SECTION 3: EUROPEAN DESTINATIONS
+   ========================================= */
+.europe-destinations-section {
+  padding: 90px 0 110px;
+  background: #f8fafc;
+  position: relative;
+}
+
+.europe-destinations-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Visually Distinct Deep Navy Container */
+.europe-showcase-box {
+  position: relative;
+  border-radius: 28px;
+  padding: 64px 52px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 14%, rgba(245, 158, 11, 0.16) 0%, transparent 42%),
+    radial-gradient(circle at 8% 90%, rgba(20, 184, 166, 0.16) 0%, transparent 45%),
+    linear-gradient(135deg, #0e2c54 0%, #143d73 100%);
+  box-shadow: 0 22px 48px rgba(14, 44, 84, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Header Layout */
+.europe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  flex-wrap: wrap;
+}
+
+.europe-header-left {
+  max-width: 560px;
+}
+
+.europe-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #f59e0b;
+  /* background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.25); */
+  padding: 6px 0px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.eyebrow-flag {
+  width: 18px;
+  height: 13px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.europe-heading {
+   font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+}
+
+.europe-desc {
+  max-width: 430px;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Full-Width Responsive Collage Image */
+.europe-banner-wrap {
+  width: 100%;
+  margin-bottom: 36px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  background: #0e2c54;
+}
+
+.europe-banner-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* 5-Column Country Grid */
+.europe-countries-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Individual European Country Card */
+.europe-country-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: blur(6px);
+  transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.europe-country-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+/* Flag Thumbnail */
+.europe-flag-wrap {
+  width: 52px;
+  height: 36px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.europe-flag-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Country Name */
+.europe-country-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  transition: color 0.25s ease;
+}
+
+.europe-country-card:hover h3 {
+  color: #0e2c54;
+}
+
+/* Action Link */
+.europe-link {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-top: auto;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.europe-country-card:hover .europe-link {
+  color: #143d73;
+  transform: translateX(4px);
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1024px) {
+  .europe-showcase-box {
+    padding: 48px 36px;
+  }
+
+  .europe-banner-img {
+    max-height: 380px;
+  }
+
+  .europe-countries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .europe-destinations-section {
+    padding: 65px 0 80px;
+  }
+
+  .europe-showcase-box {
+    padding: 36px 24px;
+    border-radius: 22px;
+  }
+
+  .europe-banner-wrap {
+    border-radius: 14px;
+    margin-bottom: 28px;
+  }
+
+  .europe-banner-img {
+    aspect-ratio: 4 / 3;
+    max-height: 260px;
+  }
+
+  .europe-countries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .europe-countries-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SECTION 4: FIND YOUR VISA PATHWAY
+   ========================================= */
+.visa-pathway-section {
+  padding: 100px 0 110px;
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(20, 184, 166, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
+    #ffffff;
+}
+
+.visa-pathway-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Centered Header */
+.pathway-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 54px auto;
+}
+
+.pathway-header .section-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #143d73;
+  /* background: linear-gradient(135deg, rgba(20, 61, 115, 0.1), rgba(20, 184, 166, 0.12)); */
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.pathway-header .section-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0e2c54;
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+}
+
+.pathway-header .section-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+/* 4-Column Responsive Grid */
+.pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Pathway Card */
+.pathway-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 34px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 8px 24px rgba(14, 44, 84, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+/* Top Gradient Bar on Hover */
+.pathway-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  /* background: linear-gradient(90deg, #143d73 0%, #14b8a6 50%, #f59e0b 100%); */
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.pathway-card:hover {
+  transform: translateY(-6px);
+  border-color: #143d73;
+  box-shadow: 0 18px 38px rgba(14, 44, 84, 0.11);
+}
+
+.pathway-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon Badge */
+.pathway-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: transform 0.28s ease, background 0.28s ease, color 0.28s ease;
+}
+
+.icon-navy {
+  background: rgba(20, 61, 115, 0.1);
+  color: #143d73;
+}
+
+.icon-gold {
+  background: rgba(245, 158, 11, 0.16);
+  color: #b45309;
+}
+
+.icon-teal {
+  background: rgba(20, 184, 166, 0.14);
+  color: #0f766e;
+}
+
+.icon-navy-gold {
+  background: linear-gradient(135deg, rgba(20, 61, 115, 0.12), rgba(245, 158, 11, 0.16));
+  color: #0e2c54;
+}
+
+.pathway-card:hover .pathway-icon-box {
+  background: #0e2c54;
+  color: #f59e0b;
+  transform: scale(1.05);
+}
+
+/* Card Typography */
+.pathway-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0e2c54;
+  margin: 0 0 10px 0;
+}
+
+.pathway-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1024px) {
+  .pathway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .visa-pathway-section {
+    padding: 70px 0 80px;
+  }
+
+  .pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-card {
+    padding: 28px 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SECTION 5: WHY CHOOSE PRESTIGE? (Navy Theme)
+   ========================================= */
+.why-prestige-section {
+  padding: 105px 0 115px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 15%, rgba(245, 158, 11, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 12% 85%, rgba(20, 184, 166, 0.15) 0%, transparent 48%),
+    linear-gradient(135deg, #0e2c54 0%, #143d73 100%);
+  color: #ffffff;
+}
+
+.why-prestige-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Centered Header */
+.why-prestige-header {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 56px auto;
+}
+
+.why-prestige-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #f59e0b;
+  /* background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.28); */
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.why-prestige-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+}
+
+.why-prestige-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* 4-Column Benefit Grid */
+.why-prestige-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Benefit Card */
+.why-prestige-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: 34px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+/* Top Gold-to-Turquoise Gradient Bar on Hover */
+.why-prestige-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  /* background: linear-gradient(90deg, #f59e0b 0%, #14b8a6 100%); */
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.why-prestige-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.26);
+}
+
+.why-prestige-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon Badge */
+.why-prestige-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: background 0.28s ease, color 0.28s ease, transform 0.28s ease;
+}
+
+.icon-gold-accent {
+  background: rgba(245, 158, 11, 0.16);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.icon-teal-accent {
+  background: rgba(20, 184, 166, 0.16);
+  color: #14b8a6;
+  border: 1px solid rgba(20, 184, 166, 0.28);
+}
+
+.why-prestige-card:hover .why-prestige-icon {
+  background: #0e2c54;
+  color: #f59e0b;
+  border-color: #0e2c54;
+  transform: scale(1.05);
+}
+
+/* Card Typography */
+.why-prestige-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  transition: color 0.25s ease;
+}
+
+.why-prestige-card p {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #cbd5e1;
+  margin: 0;
+  transition: color 0.25s ease;
+}
+
+.why-prestige-card:hover h3 {
+  color: #0e2c54;
+}
+
+.why-prestige-card:hover p {
+  color: #475569;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1024px) {
+  .why-prestige-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .why-prestige-section {
+    padding: 75px 0 85px;
+  }
+
+  .why-prestige-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-prestige-card {
+    padding: 28px 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   COUNTRIES PAGE: VISA GUIDE & CHECKLIST
+   ========================================= */
+.cnt-process-section,
+.cnt-checklist-section {
+  --cnt-navy-dark: #0e2c54;
+  --cnt-navy: #143d73;
+  --cnt-gold: #f59e0b;
+  --cnt-teal: #14b8a6;
+  --cnt-teal-deep: #0f766e;
+  --cnt-light-bg: #f8fafc;
+  --cnt-white: #ffffff;
+  --cnt-border: #e2e8f0;
+  --cnt-muted: #475569;
+  font-family: inherit;
+}
+
+.cnt-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cnt-sec-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 52px auto;
+}
+
+.cnt-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cnt-navy);
+  /* background: rgba(20, 61, 115, 0.08); */
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.cnt-eyebrow-gold {
+  color: var(--cnt-gold);
+  /* background: rgba(245, 158, 11, 0.14); */
+  /* border: 1px solid rgba(245, 158, 11, 0.25); */
+}
+
+.cnt-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--cnt-navy-dark);
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+}
+
+.cnt-heading-light {
+  color: var(--cnt-white);
+}
+
+.cnt-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--cnt-muted);
+  margin: 0;
+}
+
+.cnt-desc-light {
+  color: #cbd5e1;
+}
+
+/* =========================================
+   1. VISA PROCESS GUIDE (Navy 5-Card Grid)
+   ========================================= */
+.cnt-process-section {
+  padding: 96px 0;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(20, 184, 166, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.14) 0%, transparent 45%),
+    linear-gradient(135deg, var(--cnt-navy-dark) 0%, var(--cnt-navy) 100%);
+}
+
+.cnt-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.cnt-step-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cnt-step-card.is-last {
+  border-color: rgba(245, 158, 11, 0.42);
+}
+
+.cnt-step-card:hover {
+  transform: translateY(-6px);
+  background: var(--cnt-white);
+  border-color: var(--cnt-gold);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+}
+
+.cnt-step-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cnt-step-num {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 11px;
+  border-radius: 50px;
+}
+
+.cnt-step-num.tone-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--cnt-gold);
+}
+
+.cnt-step-num.tone-teal {
+  background: rgba(20, 184, 166, 0.18);
+  color: var(--cnt-teal);
+}
+
+.cnt-step-card:hover .cnt-step-num.tone-gold,
+.cnt-step-card:hover .cnt-step-num.tone-teal {
+  background: rgba(14, 44, 84, 0.1);
+  color: var(--cnt-navy-dark);
+}
+
+.cnt-step-dash {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cnt-gold);
+  line-height: 1;
+}
+
+.cnt-step-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cnt-white);
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  transition: color 0.22s ease;
+}
+
+.cnt-step-card p {
+  font-size: 14px;
+  line-height: 1.62;
+  color: #cbd5e1;
+  margin: 0;
+  transition: color 0.22s ease;
+}
+
+.cnt-step-card:hover h3 {
+  color: var(--cnt-navy-dark);
+}
+
+.cnt-step-card:hover p {
+  color: var(--cnt-muted);
+}
+
+/* =========================================
+   2. DOCUMENT CHECKLIST (Light 6-Col Grid)
+   ========================================= */
+.cnt-checklist-section {
+  padding: 96px 0 106px;
+  background: var(--cnt-light-bg);
+}
+
+.cnt-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+}
+
+.cnt-doc-card {
+  grid-column: span 2;
+  background: var(--cnt-white);
+  border: 1px solid var(--cnt-border);
+  border-radius: 18px;
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 22px rgba(14, 44, 84, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cnt-doc-card.is-bottom {
+  grid-column: span 3;
+}
+
+.cnt-doc-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cnt-navy);
+  box-shadow: 0 16px 32px rgba(14, 44, 84, 0.1);
+}
+
+.cnt-doc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cnt-check-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt-check-icon.icon-navy {
+  background: rgba(20, 61, 115, 0.12);
+  color: var(--cnt-navy);
+}
+
+.cnt-check-icon.icon-teal {
+  background: rgba(20, 184, 166, 0.16);
+  color: var(--cnt-teal-deep);
+}
+
+.cnt-check-icon.icon-gold {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.cnt-doc-dash {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cnt-gold);
+  line-height: 1;
+}
+
+.cnt-doc-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--cnt-navy-dark);
+  margin: 0 0 10px 0;
+}
+
+.cnt-doc-card p {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: var(--cnt-muted);
+  margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+@media (max-width: 1180px) {
+  .cnt-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cnt-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cnt-checklist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cnt-doc-card,
+  .cnt-doc-card.is-bottom {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .cnt-process-section,
+  .cnt-checklist-section {
+    padding: 72px 0;
+  }
+
+  .cnt-process-grid,
+  .cnt-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cnt-step-card,
+  .cnt-doc-card {
+    padding: 22px 20px;
+  }
+}

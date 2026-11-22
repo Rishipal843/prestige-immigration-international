@@ -138,3 +138,64 @@ document.getElementById('consultationForm').addEventListener('submit', function(
     }
   });
   
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutFaqItems = document.querySelectorAll(".abt-faq-item");
+
+  aboutFaqItems.forEach((item) => {
+    const button = item.querySelector(".abt-faq-btn");
+    if (!button) return;
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      aboutFaqItems.forEach((other) => {
+        other.classList.remove("is-open");
+        const otherBtn = other.querySelector(".abt-faq-btn");
+        if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        item.classList.add("is-open");
+        button.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".pmi-faq-item");
+
+  faqItems.forEach((item) => {
+    const trigger = item.querySelector(".pmi-faq-trigger");
+    if (!trigger) return;
+
+    trigger.addEventListener("click", function () {
+      const isCurrentlyOpen = item.classList.contains("is-open");
+
+      // Optional: close other open items so only one stays expanded at a time
+      faqItems.forEach((otherItem) => {
+        otherItem.classList.remove("is-open");
+        const otherBtn = otherItem.querySelector(".pmi-faq-trigger");
+        if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+      });
+
+      if (!isCurrentlyOpen) {
+        item.classList.add("is-open");
+        trigger.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+
+
+
+
+
+

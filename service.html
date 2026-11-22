@@ -1,4 +1,7 @@
+
+<!DOCTYPE html>
 <html lang="en">
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prestige Migration International Services</title>
@@ -12,11 +15,11 @@
 </head>
 <body>
 
-<header class="navbar" id="navbar">
+ <header class="navbar" id="navbar">
     <div class="container navbar-inner">
       <!-- Left: Logo -->
-      <a href="#" class="logo">
-        <img src="./assets/logo/prestige-removebg-preview.png" alt="Prestige Migration International" />
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo/prestige-logo-bg-remove.webp" alt="Prestige Migration International" />
       </a>
 
       <!-- Center / Mobile Drawer: Navigation Links -->
@@ -25,35 +28,25 @@
 
         <div class="dropdown">
           <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Services ▾</button>
-           <div class="dropdown-menu">
-            <a href="./service.html" onclick="closeMobileMenu()">Study Abroad</a>
-            <a href="./service.html" onclick="closeMobileMenu()">Work Permits</a>
-            <a href="./service.html" onclick="closeMobileMenu()">Tourist Visa</a>
-            <a href="./service.html" onclick="closeMobileMenu()">Visitor Visas</a>
-            <a href="./service.html" onclick="closeMobileMenu()">Business Immigration</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button type="button" class="nav-link dropdown-btn" onclick="toggleMobileDropdown(this)">Countries ▾</button>
           <div class="dropdown-menu">
-            <a href="#canada" onclick="closeMobileMenu()">Canada</a>
-            <a href="#uk" onclick="closeMobileMenu()">United Kingdom</a>
-            <a href="#usa" onclick="closeMobileMenu()">United States</a>
-            <a href="#australia" onclick="closeMobileMenu()">Australia</a>
-            <a href="#nz" onclick="closeMobileMenu()">New Zealand</a>
-            <a href="#europe" onclick="closeMobileMenu()">Europe</a>
+            <a href="./service.html#study-visa" onclick="closeMobileMenu()">Study Abroad</a>
+            <a href="./service.html#work-visa" onclick="closeMobileMenu()">Work Permits</a>
+            <a href="./service.html#tourist-visa" onclick="closeMobileMenu()">Tourist Visa</a>
+            <a href="./service.html#visitor-visa" onclick="closeMobileMenu()">Visitor Visas</a>
+            <a href="./service.html#business-visa" onclick="closeMobileMenu()">Business Immigration</a>
           </div>
         </div>
 
-        <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="./countries.html" class="nav-link" onclick="closeMobileMenu()">Countries</a>
+
+        <a href="./about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
         <a href="./contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
         <a href="./contact.html" class="btn btn-primary mobile-cta" onclick="closeMobileMenu()">Apply Now</a>
       </nav>
 
       <!-- Right: Apply Button (Desktop Only) + Hamburger Toggle (Mobile Only) -->
       <div class="nav-right">
-        <a href="#apply" class="btn btn-primary desktop-cta">Apply Now</a>
+        <a href="./contact.html" class="btn btn-primary desktop-cta">Apply Now</a>
         <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">☰</button>
       </div>
     </div>
@@ -65,39 +58,26 @@
 
 
 
-
 <!-- SERVICES HERO SECTION -->
 <section class="services-hero-section">
   <div class="container">
-    <div class="services-hero-grid">
-      
-      <!-- Left Content Column -->
-      <div class="services-hero-content">
-        <span class="services-eyebrow">OUR IMMIGRATION SERVICES</span>
-        <h1 class="services-title">
-          Comprehensive Immigration Solutions for Your Global Journey
-        </h1>
-        <p class="services-desc">
-          Whether you're planning to visit your loved ones, explore international destinations, expand your business, pursue employment opportunities or study abroad, Prestige Migration International is here to support your journey.
-        </p>
-        <p class="services-subdesc">
-          We provide professional immigration guidance and application assistance to help you understand visa requirements and navigate the process with confidence.
-        </p>
-        
-        <!-- Action Buttons -->
-        <div class="services-hero-btns">
-          <a href="#services" class="services-btn-primary">Explore Our Services</a>
-          <a href="#consultation" class="services-btn-outline">Book Free Consultation</a>
-        </div>
-      </div>
+    <div class="services-hero-content">
+      <span class="services-eyebrow">OUR IMMIGRATION SERVICES</span>
+      <h1 class="services-title">
+        Comprehensive Immigration Solutions for Your Global Journey
+      </h1>
+      <p class="services-desc">
+        Whether you're planning to visit your loved ones, explore international destinations, expand your business, pursue employment opportunities or study abroad, Prestige Migration International is here to support your journey.
+      </p>
+      <p class="services-subdesc">
+        We provide professional immigration guidance and application assistance to help you understand visa requirements and navigate the process with confidence.
+      </p>
 
-      <!-- Right Image Column (Curved Frame) -->
-      <div class="services-hero-media">
-        <div class="services-img-frame">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80" alt="Professional immigration guidance consultation">
-        </div>
+      <!-- Action Buttons -->
+      <div class="services-hero-btns">
+        <a href="#services" class="services-btn-primary">Explore Our Services</a>
+        <a href="./contact.html" class="services-btn-outline">Book Free Consultation</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -124,7 +104,7 @@
       <!-- 01. Visitor Visa -->
       <article class="service-item-card">
         <div class="service-card-media">
-          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Family reuniting for a visit abroad">
+          <img src="./assets/images/service_visitor.webp" alt="Family reuniting for a visit abroad">
           <span class="service-number-badge">01</span>
         </div>
         <div class="service-card-body">
@@ -139,7 +119,7 @@
       <!-- 02. Business Visa -->
       <article class="service-item-card">
         <div class="service-card-media">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Global business expansion and executive corporate towers">
+          <img src="./assets/images/service_bussiness.webp" alt="Global business expansion and executive corporate towers">
           <span class="service-number-badge">02</span>
         </div>
         <div class="service-card-body">
@@ -154,7 +134,7 @@
       <!-- 03. Tourist Visa -->
       <article class="service-item-card">
         <div class="service-card-media">
-          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Scenic international travel destination for tourists">
+          <img src="./assets/images/service_tourist.webp" alt="Scenic international travel destination for tourists">
           <span class="service-number-badge">03</span>
         </div>
         <div class="service-card-body">
@@ -169,7 +149,7 @@
       <!-- 04. Work Visa -->
       <article class="service-item-card">
         <div class="service-card-media">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Modern international corporate workplace for skilled professionals">
+          <img src="./assets/images/service_work.webp" alt="Modern international corporate workplace for skilled professionals">
           <span class="service-number-badge">04</span>
         </div>
         <div class="service-card-body">
@@ -184,7 +164,7 @@
       <!-- 05. Study Visa -->
       <article class="service-item-card">
         <div class="service-card-media">
-          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="International university campus and graduating students">
+          <img src="./assets/images/service_study.webp" alt="International university campus and graduating students">
           <span class="service-number-badge">05</span>
         </div>
         <div class="service-card-body">
@@ -230,7 +210,7 @@
       <article class="visa-detail-block" id="visitor-visa">
         <div class="visa-detail-media">
           <div class="visa-img-frame">
-            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=80" alt="Family reuniting abroad with a Visitor Visa">
+            <img src="./assets/images/service_visitor.webp" alt="Family reuniting abroad with a Visitor Visa">
           </div>
           <span class="visa-step-badge">01</span>
         </div>
@@ -261,7 +241,7 @@
             </p>
           </div>
 
-          <a href="#consultation" class="btn-visa-cta">
+          <a href="./contact.html" class="btn-visa-cta">
             Apply for Visitor Visa <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -273,7 +253,7 @@
       <article class="visa-detail-block visa-reverse" id="business-visa">
         <div class="visa-detail-media">
           <div class="visa-img-frame">
-            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1000&q=80" alt="Executive corporate business expansion abroad">
+            <img src="./assets/images/service_bussiness.webp" alt="Executive corporate business expansion abroad">
           </div>
           <span class="visa-step-badge">02</span>
         </div>
@@ -304,7 +284,7 @@
             </p>
           </div>
 
-          <a href="#consultation" class="btn-visa-cta">
+          <a href="./contact.html" class="btn-visa-cta">
             Apply for Business Visa <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -316,7 +296,7 @@
       <article class="visa-detail-block" id="tourist-visa">
         <div class="visa-detail-media">
           <div class="visa-img-frame">
-            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="International sightseeing and leisure tourism">
+            <img src="./assets/images/service_tourist.webp" alt="International sightseeing and leisure tourism">
           </div>
           <span class="visa-step-badge">03</span>
         </div>
@@ -347,7 +327,7 @@
             </p>
           </div>
 
-          <a href="#consultation" class="btn-visa-cta">
+          <a href="./contact.html" class="btn-visa-cta">
             Apply for Tourist Visa <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -359,7 +339,7 @@
       <article class="visa-detail-block visa-reverse" id="work-visa">
         <div class="visa-detail-media">
           <div class="visa-img-frame">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Skilled professionals working in an international office">
+            <img src="./assets/images/service_work2.webp" alt="Skilled professionals working in an international office">
           </div>
           <span class="visa-step-badge">04</span>
         </div>
@@ -402,7 +382,7 @@
       <article class="visa-detail-block" id="study-visa">
         <div class="visa-detail-media">
           <div class="visa-img-frame">
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80" alt="International university campus and students">
+            <img src="./assets/images/service_study.webp" alt="International university campus and students">
           </div>
           <span class="visa-step-badge">05</span>
         </div>
@@ -436,7 +416,7 @@
             </p>
           </div>
 
-          <a href="#consultation" class="btn-visa-cta">
+          <a href="./contact.html  " class="btn-visa-cta">
             Apply for Study Visa <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -466,7 +446,7 @@
         </p>
 
         <div class="swc-image-frame">
-          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Personalized visa guidance and international documentation consultation">
+          <img src="./assets/images/service_whychoose.webp" alt="Personalized visa guidance and international documentation consultation">
         </div>
       </div>
 
@@ -538,6 +518,214 @@
 
 
 
+
+<!-- VISA PROCESS GUIDE SECTION (SERVICE PAGE) -->
+<section class="srv-process-section" id="visa-process-guide">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="srv-sec-header">
+      <span class="srv-eyebrow eyebrow-gold">VISA PROCESS GUIDE</span>
+      <h2 class="srv-sec-heading heading-light">Step-by-Step Guide to Make Your Immigration Journey Smooth</h2>
+      <p class="srv-sec-desc desc-light">
+        A structured five-stage workflow designed to bring clarity, accuracy, and ongoing guidance from initial planning through departure.
+      </p>
+    </div>
+
+    <!-- Horizontal Progress Track (Desktop) -->
+    <div class="srv-stepper-track" aria-hidden="true">
+      <div class="srv-stepper-node"><span>01</span></div>
+      <div class="srv-stepper-line"></div>
+      <div class="srv-stepper-node"><span>02</span></div>
+      <div class="srv-stepper-line"></div>
+      <div class="srv-stepper-node"><span>03</span></div>
+      <div class="srv-stepper-line"></div>
+      <div class="srv-stepper-node"><span>04</span></div>
+      <div class="srv-stepper-line"></div>
+      <div class="srv-stepper-node node-gold"><span>05</span></div>
+    </div>
+
+    <!-- 5-Step Process Grid -->
+    <div class="srv-process-grid">
+
+      <!-- Step 1 -->
+      <article class="srv-step-card">
+        <div class="srv-step-top">
+          <span class="srv-step-badge badge-gold">STEP 01</span>
+          <span class="srv-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Initial Consultation</h3>
+        <p>Connect with our immigration experts to discuss your goals, preferred country, and visa category. We understand your background, qualifications, and timelines to suggest the best possible immigration pathway.</p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="srv-step-card">
+        <div class="srv-step-top">
+          <span class="srv-step-badge badge-teal">STEP 02</span>
+          <span class="srv-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Profile Evaluation</h3>
+        <p>Your profile is carefully assessed based on eligibility criteria such as education, work experience, language proficiency, and financial background. This helps us identify strengths and address any potential gaps early.</p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="srv-step-card">
+        <div class="srv-step-top">
+          <span class="srv-step-badge badge-gold">STEP 03</span>
+          <span class="srv-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Document Preparation</h3>
+        <p>We guide you through preparing and organizing all required documents including academic records, employment proofs, financial statements, and supporting letters. Accuracy and completeness are ensured to avoid rejections.</p>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="srv-step-card">
+        <div class="srv-step-top">
+          <span class="srv-step-badge badge-teal">STEP 04</span>
+          <span class="srv-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Application Submission</h3>
+        <p>Once documents are ready, we submit your application to the relevant authorities. Our team ensures compliance with current immigration laws and keeps you updated on every stage of the process.</p>
+      </article>
+
+      <!-- Step 5 -->
+      <article class="srv-step-card step-featured">
+        <div class="srv-step-top">
+          <span class="srv-step-badge badge-gold">STEP 05</span>
+          <span class="srv-step-dash" aria-hidden="true">&minus;</span>
+        </div>
+        <h3>Visa Approval &amp; Travel</h3>
+        <p>After approval, we assist you with post-visa formalities such as travel planning, accommodation guidance, and pre-departure briefings. You are fully prepared to begin your journey confidently.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- DOCUMENT CHECKLIST SECTION (SERVICE PAGE) -->
+<section class="srv-checklist-section" id="document-checklist">
+  <div class="container">
+
+    <!-- Split Layout: Left Sticky Summary + Right Checklist Items -->
+    <div class="srv-checklist-layout">
+
+      <!-- Left Summary Column -->
+      <div class="srv-checklist-intro">
+        <span class="srv-eyebrow">DOCUMENT CHECKLIST</span>
+        <h2 class="srv-sec-heading">Essential Documents Required for Immigration &amp; Visa Processing</h2>
+        <p class="srv-sec-desc">
+          Prepare accurate, complete, and consistent records early so your application moves smoothly through verification and review.
+        </p>
+
+        <div class="srv-checklist-callout">
+          <div class="srv-callout-icon" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <strong>Verification Readiness</strong>
+            <p>Ensure names, dates, stamps, and translations match across all academic, employment, financial, and civil records.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Checklist Stack -->
+      <div class="srv-checklist-items">
+
+        <!-- Doc 1 -->
+        <div class="srv-doc-row">
+          <div class="srv-doc-check" aria-hidden="true">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="srv-doc-content">
+            <div class="srv-doc-title-row">
+              <h3>Valid Passport</h3>
+              <span class="srv-doc-dash" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Your passport must be valid for at least six months beyond your intended travel date. It should have sufficient blank pages for visa stamps and must be in good physical condition.</p>
+          </div>
+        </div>
+
+        <!-- Doc 2 -->
+        <div class="srv-doc-row">
+          <div class="srv-doc-check check-teal" aria-hidden="true">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="srv-doc-content">
+            <div class="srv-doc-title-row">
+              <h3>Educational Certificates</h3>
+              <span class="srv-doc-dash" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Include all academic documents such as degrees, diplomas, transcripts, and mark sheets. These help verify your educational qualifications and eligibility for the selected visa category.</p>
+          </div>
+        </div>
+
+        <!-- Doc 3 -->
+        <div class="srv-doc-row">
+          <div class="srv-doc-check check-gold" aria-hidden="true">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="srv-doc-content">
+            <div class="srv-doc-title-row">
+              <h3>Work Experience Letters</h3>
+              <span class="srv-doc-dash" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Official experience letters from current and previous employers are required. These should clearly mention your designation, duration of employment, and key responsibilities.</p>
+          </div>
+        </div>
+
+        <!-- Doc 4 -->
+        <div class="srv-doc-row">
+          <div class="srv-doc-check check-teal" aria-hidden="true">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="srv-doc-content">
+            <div class="srv-doc-title-row">
+              <h3>Proof of Funds</h3>
+              <span class="srv-doc-dash" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Financial documents such as bank statements, fixed deposits, or sponsor letters are required to prove your ability to support yourself during your stay abroad.</p>
+          </div>
+        </div>
+
+        <!-- Doc 5 -->
+        <div class="srv-doc-row">
+          <div class="srv-doc-check check-gold" aria-hidden="true">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="srv-doc-content">
+            <div class="srv-doc-title-row">
+              <h3>Medical &amp; Police Clearance</h3>
+              <span class="srv-doc-dash" aria-hidden="true">&minus;</span>
+            </div>
+            <p>Medical examination reports and police clearance certificates ensure compliance with health and character requirements of the destination country.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
 <!-- FINAL CONSULTATION CTA SECTION -->
 <section class="final-consultation-section" id="consultation">
   <div class="container">
@@ -573,17 +761,20 @@
         <p class="actions-subtitle">Choose how you would like to begin your application journey today.</p>
 
         <div class="consultation-btn-group">
-          <a href="#booking-modal" class="btn-cta-primary">
+          <a href="./contact.html" class="btn-cta-primary">
             Book Free Consultation <span aria-hidden="true">→</span>
           </a>
-          <a href="tel:+96500000000" class="btn-cta-secondary">
-            Call Us Now: +965 0000 0000
+          <a href="tel: +96560917575" class="btn-cta-secondary">
+            Call Us Now:  +96560917575
+          </a>
+          <a href="tel: +971502870266" class="btn-cta-secondary">
+            Call Us Now:   +971502870266
           </a>
         </div>
 
         <div class="consultation-direct-email">
           <span>Prefer emailing us?</span>
-          <a href="mailto:info@prestigemigration.com">info@prestigemigration.com</a>
+          <a href="mailto:info@immisquare.com">info@immisquare.com</a>
         </div>
       </div>
 
@@ -607,7 +798,7 @@
       <div class="footer-col footer-brand-col">
         <div class="footer-logo-wrap">
           <div class="footer-logo-badge">
-            <img src="./assets/logo/WhatsApp Image 2026-11-14 at 6.48.23 PM.jpeg" alt="Prestige Migration Logo">
+            <img src="./assets/logo/prestige-logo.webp" alt="Prestige Migration Logo">
           </div>
           <div class="footer-logo-text">
             <h3>Prestige Migration International</h3>
@@ -623,21 +814,44 @@
       <div class="footer-col">
         <h4>EXPLORE</h4>
         <ul class="footer-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#countries">Countries</a></li>
-          <li><a href="#about">Why Prestige</a></li>
-          <li><a href="#consultation">Contact</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./countries.html">Countries</a></li>
+          <li><a href="./about.html">Why Prestige</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
 
       <!-- Col 3: Contact Info -->
       <div class="footer-col">
+        <h4>COUNTRIES</h4>
+        <ul class="footer-links">
+          <li><a href="./countries/canada.html">Canada</a></li>
+          <li><a href="./countries/us.html">United States</a></li>
+          <li><a href="./countries/uk.html">United Kingdom</a></li>
+          <li><a href="./countries/newzealand.html">New Zealand</a></li>
+          <li><a href="./countries/australia.html">Australia</a></li>
+          <li><a href="./countries/europe.html">Europe</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="footer-col">
         <h4>CONTACT</h4>
         <ul class="footer-contact-list">
           <li><a href="mailto:info@immisquare.com">info@immisquare.com</a></li>
           <li>Kuwait: +965 6091 7575</li>
+          <li><span class="footer-address">Al Thuraya Tower, Floor 4, Hamad Al Mubarak Street, Block 7, Salmiya, Kuwait</span></li>
           <li>United Arab Emirates: +971 50 287 0266</li>
+          <li><span class="footer-address">Prime Tower, 31st Floor, Dubai</span></li>
         </ul>
+        <div class="footer-socials" aria-label="Social media">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Immisquare/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://x.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="X" class="social-icon"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://linkedin.com/company/immisquare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://instagram.com/immisquare" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
       </div>
 
     </div>
